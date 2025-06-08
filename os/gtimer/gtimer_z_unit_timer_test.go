@@ -13,26 +13,26 @@ import (
 	"testing"
 	"time"
 
-	"github.com/gogf/gf/v2/container/garray"
-	"github.com/gogf/gf/v2/os/gtimer"
-	"github.com/gogf/gf/v2/test/gtest"
+	"github.com/ximplez-go/gf/container/garray"
+	"github.com/ximplez-go/gf/os/gtimer"
+	"github.com/ximplez-go/gf/test/gtest"
 )
 
 func TestTimer_Add_Close(t *testing.T) {
 	gtest.C(t, func(t *gtest.T) {
 		timer := gtimer.New()
 		array := garray.New(true)
-		//fmt.Println("start", time.Now())
+		// fmt.Println("start", time.Now())
 		timer.Add(ctx, 200*time.Millisecond, func(ctx context.Context) {
-			//fmt.Println("job1", time.Now())
+			// fmt.Println("job1", time.Now())
 			array.Append(1)
 		})
 		timer.Add(ctx, 200*time.Millisecond, func(ctx context.Context) {
-			//fmt.Println("job2", time.Now())
+			// fmt.Println("job2", time.Now())
 			array.Append(1)
 		})
 		timer.Add(ctx, 400*time.Millisecond, func(ctx context.Context) {
-			//fmt.Println("job3", time.Now())
+			// fmt.Println("job3", time.Now())
 			array.Append(1)
 		})
 		time.Sleep(250 * time.Millisecond)

@@ -7,7 +7,7 @@
 package gmap
 
 import (
-	"github.com/gogf/gf/v2/container/gtree"
+	"github.com/ximplez-go/gf/container/gtree"
 )
 
 // TreeMap based on red-black tree, alias of RedBlackTree.

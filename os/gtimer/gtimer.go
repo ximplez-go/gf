@@ -24,10 +24,10 @@ import (
 	"sync"
 	"time"
 
-	"github.com/gogf/gf/v2/container/gtype"
-	"github.com/gogf/gf/v2/errors/gcode"
-	"github.com/gogf/gf/v2/errors/gerror"
-	"github.com/gogf/gf/v2/internal/command"
+	"github.com/ximplez-go/gf/container/gtype"
+	"github.com/ximplez-go/gf/errors/gcode"
+	"github.com/ximplez-go/gf/errors/gerror"
+	"github.com/ximplez-go/gf/internal/command"
 )
 
 // Timer is the timer manager, which uses ticks to calculate the timing interval.

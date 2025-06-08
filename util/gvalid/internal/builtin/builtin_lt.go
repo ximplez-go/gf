@@ -10,9 +10,9 @@ import (
 	"errors"
 	"strconv"
 
-	"github.com/gogf/gf/v2/text/gstr"
-	"github.com/gogf/gf/v2/util/gconv"
-	"github.com/gogf/gf/v2/util/gutil"
+	"github.com/ximplez-go/gf/text/gstr"
+	"github.com/ximplez-go/gf/util/gconv"
+	"github.com/ximplez-go/gf/util/gutil"
 )
 
 // RuleLT implements `lt` rule:

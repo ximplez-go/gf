@@ -12,13 +12,13 @@ import (
 	"os"
 	"strings"
 
-	"github.com/gogf/gf/v2/container/gvar"
-	"github.com/gogf/gf/v2/errors/gcode"
-	"github.com/gogf/gf/v2/errors/gerror"
-	"github.com/gogf/gf/v2/internal/command"
-	"github.com/gogf/gf/v2/internal/json"
-	"github.com/gogf/gf/v2/text/gregex"
-	"github.com/gogf/gf/v2/text/gstr"
+	"github.com/ximplez-go/gf/container/gvar"
+	"github.com/ximplez-go/gf/errors/gcode"
+	"github.com/ximplez-go/gf/errors/gerror"
+	"github.com/ximplez-go/gf/internal/command"
+	"github.com/ximplez-go/gf/internal/json"
+	"github.com/ximplez-go/gf/text/gregex"
+	"github.com/ximplez-go/gf/text/gstr"
 )
 
 // ParserOption manages the parsing options.

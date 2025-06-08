@@ -10,9 +10,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/gogf/gf/v2/net/gtcp"
-	"github.com/gogf/gf/v2/test/gtest"
-	"github.com/gogf/gf/v2/text/gstr"
+	"github.com/ximplez-go/gf/net/gtcp"
+	"github.com/ximplez-go/gf/test/gtest"
+	"github.com/ximplez-go/gf/text/gstr"
 )
 
 func Test_Pool_Basic1(t *testing.T) {
@@ -60,8 +60,8 @@ func Test_Pool_Basic2(t *testing.T) {
 		data := []byte("9999")
 		err = conn.SendPkg(data)
 		t.AssertNil(err)
-		//err = conn.SendPkgWithTimeout(data, time.Second)
-		//t.AssertNil(err)
+		// err = conn.SendPkgWithTimeout(data, time.Second)
+		// t.AssertNil(err)
 
 		_, err = conn.SendRecv(data, -1)
 		t.AssertNE(err, nil)

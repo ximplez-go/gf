@@ -11,7 +11,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/gogf/gf/v2/util/gconv"
+	"github.com/ximplez-go/gf/util/gconv"
 )
 
 // RuleSize implements `size` rule:

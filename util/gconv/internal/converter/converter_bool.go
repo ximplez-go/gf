@@ -10,8 +10,8 @@ import (
 	"reflect"
 	"strings"
 
-	"github.com/gogf/gf/v2/internal/empty"
-	"github.com/gogf/gf/v2/util/gconv/internal/localinterface"
+	"github.com/ximplez-go/gf/internal/empty"
+	"github.com/ximplez-go/gf/util/gconv/internal/localinterface"
 )
 
 // Bool converts `any` to bool.

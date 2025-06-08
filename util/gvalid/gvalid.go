@@ -13,9 +13,9 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/gogf/gf/v2/internal/intlog"
-	"github.com/gogf/gf/v2/text/gregex"
-	"github.com/gogf/gf/v2/util/gtag"
+	"github.com/ximplez-go/gf/internal/intlog"
+	"github.com/ximplez-go/gf/text/gregex"
+	"github.com/ximplez-go/gf/util/gtag"
 )
 
 // CustomMsg is the custom error message type,

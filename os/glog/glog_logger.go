@@ -19,17 +19,17 @@ import (
 	"github.com/fatih/color"
 	"go.opentelemetry.io/otel/trace"
 
-	"github.com/gogf/gf/v2/debug/gdebug"
-	"github.com/gogf/gf/v2/internal/consts"
-	"github.com/gogf/gf/v2/internal/errors"
-	"github.com/gogf/gf/v2/internal/intlog"
-	"github.com/gogf/gf/v2/os/gctx"
-	"github.com/gogf/gf/v2/os/gfile"
-	"github.com/gogf/gf/v2/os/gfpool"
-	"github.com/gogf/gf/v2/os/gmlock"
-	"github.com/gogf/gf/v2/os/gtime"
-	"github.com/gogf/gf/v2/text/gregex"
-	"github.com/gogf/gf/v2/util/gconv"
+	"github.com/ximplez-go/gf/debug/gdebug"
+	"github.com/ximplez-go/gf/internal/consts"
+	"github.com/ximplez-go/gf/internal/errors"
+	"github.com/ximplez-go/gf/internal/intlog"
+	"github.com/ximplez-go/gf/os/gctx"
+	"github.com/ximplez-go/gf/os/gfile"
+	"github.com/ximplez-go/gf/os/gfpool"
+	"github.com/ximplez-go/gf/os/gmlock"
+	"github.com/ximplez-go/gf/os/gtime"
+	"github.com/ximplez-go/gf/text/gregex"
+	"github.com/ximplez-go/gf/util/gconv"
 )
 
 // Logger is the struct for logging management.

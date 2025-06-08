@@ -12,7 +12,7 @@ import (
 	"testing"
 	"unsafe"
 
-	"github.com/gogf/gf/v2/encoding/gbinary"
+	"github.com/ximplez-go/gf/encoding/gbinary"
 )
 
 var valueBytes = gbinary.Encode(123456789)

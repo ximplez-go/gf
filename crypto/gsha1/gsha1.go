@@ -13,8 +13,8 @@ import (
 	"io"
 	"os"
 
-	"github.com/gogf/gf/v2/errors/gerror"
-	"github.com/gogf/gf/v2/util/gconv"
+	"github.com/ximplez-go/gf/errors/gerror"
+	"github.com/ximplez-go/gf/util/gconv"
 )
 
 // Encrypt encrypts any type of variable using SHA1 algorithms.

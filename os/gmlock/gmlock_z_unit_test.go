@@ -11,9 +11,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/gogf/gf/v2/container/garray"
-	"github.com/gogf/gf/v2/os/gmlock"
-	"github.com/gogf/gf/v2/test/gtest"
+	"github.com/ximplez-go/gf/container/garray"
+	"github.com/ximplez-go/gf/os/gmlock"
+	"github.com/ximplez-go/gf/test/gtest"
 )
 
 func Test_Locker_Lock(t *testing.T) {
@@ -103,7 +103,7 @@ func Test_Locker_TryLock(t *testing.T) {
 }
 
 func Test_Locker_LockFunc(t *testing.T) {
-	//no expire
+	// no expire
 	gtest.C(t, func(t *gtest.T) {
 		key := "testLockFunc"
 		array := garray.New(true)
@@ -129,7 +129,7 @@ func Test_Locker_LockFunc(t *testing.T) {
 }
 
 func Test_Locker_TryLockFunc(t *testing.T) {
-	//no expire
+	// no expire
 	gtest.C(t, func(t *gtest.T) {
 		key := "testTryLockFunc"
 		array := garray.New(true)

@@ -11,10 +11,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/gogf/gf/v2/container/gvar"
-	"github.com/gogf/gf/v2/os/gtime"
-	"github.com/gogf/gf/v2/test/gtest"
-	"github.com/gogf/gf/v2/util/gconv"
+	"github.com/ximplez-go/gf/container/gvar"
+	"github.com/ximplez-go/gf/os/gtime"
+	"github.com/ximplez-go/gf/test/gtest"
+	"github.com/ximplez-go/gf/util/gconv"
 )
 
 var stringTests = []struct {
@@ -75,8 +75,8 @@ var stringTests = []struct {
 	// TODO The String method of gtime not equals to time.Time
 	{gfTime, "1911-10-10 00:00:00"},
 	{&gfTime, "1911-10-10 00:00:00"},
-	//{gfTime, "1911-10-10 00:00:00 +0000 UTC"},
-	//{&gfTime, "1911-10-10 00:00:00 +0000 UTC"},
+	// {gfTime, "1911-10-10 00:00:00 +0000 UTC"},
+	// {&gfTime, "1911-10-10 00:00:00 +0000 UTC"},
 }
 
 var (

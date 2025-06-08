@@ -7,10 +7,10 @@
 package gmetric
 
 import (
-	"github.com/gogf/gf/v2/encoding/gjson"
-	"github.com/gogf/gf/v2/errors/gcode"
-	"github.com/gogf/gf/v2/errors/gerror"
-	"github.com/gogf/gf/v2/text/gregex"
+	"github.com/ximplez-go/gf/encoding/gjson"
+	"github.com/ximplez-go/gf/errors/gcode"
+	"github.com/ximplez-go/gf/errors/gerror"
+	"github.com/ximplez-go/gf/text/gregex"
 )
 
 // localMetric implements interface Metric.

@@ -11,10 +11,10 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/gogf/gf/v2/encoding/gcharset"
-	"github.com/gogf/gf/v2/encoding/gjson"
-	"github.com/gogf/gf/v2/encoding/gxml"
-	"github.com/gogf/gf/v2/test/gtest"
+	"github.com/ximplez-go/gf/encoding/gcharset"
+	"github.com/ximplez-go/gf/encoding/gjson"
+	"github.com/ximplez-go/gf/encoding/gxml"
+	"github.com/ximplez-go/gf/test/gtest"
 )
 
 var testData = []struct {

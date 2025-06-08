@@ -10,9 +10,9 @@ package gcmd
 import (
 	"context"
 
-	"github.com/gogf/gf/v2/container/gset"
-	"github.com/gogf/gf/v2/errors/gerror"
-	"github.com/gogf/gf/v2/text/gstr"
+	"github.com/ximplez-go/gf/container/gset"
+	"github.com/ximplez-go/gf/errors/gerror"
+	"github.com/ximplez-go/gf/text/gstr"
 )
 
 // Command holds the info about an argument that can handle custom logic.

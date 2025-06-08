@@ -9,16 +9,16 @@ package gjson
 import (
 	"bytes"
 
-	"github.com/gogf/gf/v2/encoding/gini"
-	"github.com/gogf/gf/v2/encoding/gproperties"
-	"github.com/gogf/gf/v2/encoding/gtoml"
-	"github.com/gogf/gf/v2/encoding/gxml"
-	"github.com/gogf/gf/v2/encoding/gyaml"
-	"github.com/gogf/gf/v2/errors/gcode"
-	"github.com/gogf/gf/v2/errors/gerror"
-	"github.com/gogf/gf/v2/internal/json"
-	"github.com/gogf/gf/v2/text/gregex"
-	"github.com/gogf/gf/v2/text/gstr"
+	"github.com/ximplez-go/gf/encoding/gini"
+	"github.com/ximplez-go/gf/encoding/gproperties"
+	"github.com/ximplez-go/gf/encoding/gtoml"
+	"github.com/ximplez-go/gf/encoding/gxml"
+	"github.com/ximplez-go/gf/encoding/gyaml"
+	"github.com/ximplez-go/gf/errors/gcode"
+	"github.com/ximplez-go/gf/errors/gerror"
+	"github.com/ximplez-go/gf/internal/json"
+	"github.com/ximplez-go/gf/text/gregex"
+	"github.com/ximplez-go/gf/text/gstr"
 )
 
 // LoadWithOptions creates a Json object from given JSON format content and options.

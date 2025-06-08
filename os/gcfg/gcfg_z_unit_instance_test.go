@@ -12,10 +12,10 @@ import (
 	"context"
 	"testing"
 
-	"github.com/gogf/gf/v2/container/gmap"
-	"github.com/gogf/gf/v2/os/genv"
-	"github.com/gogf/gf/v2/os/gfile"
-	"github.com/gogf/gf/v2/test/gtest"
+	"github.com/ximplez-go/gf/container/gmap"
+	"github.com/ximplez-go/gf/os/genv"
+	"github.com/ximplez-go/gf/os/gfile"
+	"github.com/ximplez-go/gf/test/gtest"
 )
 
 var (

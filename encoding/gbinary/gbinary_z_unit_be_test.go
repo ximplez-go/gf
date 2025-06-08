@@ -9,8 +9,8 @@ package gbinary_test
 import (
 	"testing"
 
-	"github.com/gogf/gf/v2/encoding/gbinary"
-	"github.com/gogf/gf/v2/test/gtest"
+	"github.com/ximplez-go/gf/encoding/gbinary"
+	"github.com/ximplez-go/gf/test/gtest"
 )
 
 func Test_BeEncodeAndBeDecode(t *testing.T) {
@@ -19,7 +19,7 @@ func Test_BeEncodeAndBeDecode(t *testing.T) {
 			ve := gbinary.BeEncode(v)
 			ve1 := gbinary.BeEncodeByLength(len(ve), v)
 
-			//t.Logf("%s:%v, encoded:%v\n", k, v, ve)
+			// t.Logf("%s:%v, encoded:%v\n", k, v, ve)
 			switch v.(type) {
 			case int:
 				t.Assert(gbinary.BeDecodeToInt(ve), v)

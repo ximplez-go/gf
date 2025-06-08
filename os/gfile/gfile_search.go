@@ -10,8 +10,8 @@ import (
 	"bytes"
 	"fmt"
 
-	"github.com/gogf/gf/v2/container/garray"
-	"github.com/gogf/gf/v2/errors/gerror"
+	"github.com/ximplez-go/gf/container/garray"
+	"github.com/ximplez-go/gf/errors/gerror"
 )
 
 // Search searches file by name `name` in following paths with priority:

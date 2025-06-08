@@ -9,8 +9,8 @@ package gconv_test
 import (
 	"testing"
 
-	"github.com/gogf/gf/v2/test/gtest"
-	"github.com/gogf/gf/v2/util/gconv"
+	"github.com/ximplez-go/gf/test/gtest"
+	"github.com/ximplez-go/gf/util/gconv"
 )
 
 func TestScanList(t *testing.T) {
@@ -266,11 +266,11 @@ func TestScanList(t *testing.T) {
 				{Uid: 1, Address: "address1"},
 				{Uid: 2, Address: "address2"},
 			}
-			//userScores = []EntityUserScores{
+			// userScores = []EntityUserScores{
 			//	{Id: 10, Uid: 1, Score: 100},
 			//	{Id: 11, Uid: 1, Score: 60},
 			//	{Id: 20, Uid: 2, Score: 99},
-			//}
+			// }
 		)
 
 		err = gconv.ScanList(nil, nil, "")

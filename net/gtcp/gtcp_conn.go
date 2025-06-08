@@ -14,7 +14,7 @@ import (
 	"net"
 	"time"
 
-	"github.com/gogf/gf/v2/errors/gerror"
+	"github.com/ximplez-go/gf/errors/gerror"
 )
 
 // Conn is the TCP connection object.

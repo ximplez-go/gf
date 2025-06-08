@@ -9,7 +9,7 @@ package builtin
 import (
 	"errors"
 
-	"github.com/gogf/gf/v2/net/gipv6"
+	"github.com/ximplez-go/gf/net/gipv6"
 )
 
 // RuleIpv6 implements `ipv6` rule:

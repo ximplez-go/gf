@@ -9,9 +9,9 @@ package gcfg
 import (
 	"context"
 
-	"github.com/gogf/gf/v2/container/gvar"
-	"github.com/gogf/gf/v2/encoding/gjson"
-	"github.com/gogf/gf/v2/errors/gerror"
+	"github.com/ximplez-go/gf/container/gvar"
+	"github.com/ximplez-go/gf/encoding/gjson"
+	"github.com/ximplez-go/gf/errors/gerror"
 )
 
 // AdapterContent implements interface Adapter using content.

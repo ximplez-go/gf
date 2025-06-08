@@ -11,12 +11,12 @@ import (
 	"fmt"
 	"reflect"
 
-	"github.com/gogf/gf/v2/errors/gcode"
-	"github.com/gogf/gf/v2/errors/gerror"
-	"github.com/gogf/gf/v2/internal/json"
-	"github.com/gogf/gf/v2/text/gstr"
-	"github.com/gogf/gf/v2/util/gconv"
-	"github.com/gogf/gf/v2/util/gtag"
+	"github.com/ximplez-go/gf/errors/gcode"
+	"github.com/ximplez-go/gf/errors/gerror"
+	"github.com/ximplez-go/gf/internal/json"
+	"github.com/ximplez-go/gf/text/gstr"
+	"github.com/ximplez-go/gf/util/gconv"
+	"github.com/ximplez-go/gf/util/gtag"
 )
 
 // RuleEnums implements `enums` rule:

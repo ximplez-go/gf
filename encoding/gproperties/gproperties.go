@@ -14,9 +14,9 @@ import (
 
 	"github.com/magiconair/properties"
 
-	"github.com/gogf/gf/v2/errors/gerror"
-	"github.com/gogf/gf/v2/internal/json"
-	"github.com/gogf/gf/v2/util/gconv"
+	"github.com/ximplez-go/gf/errors/gerror"
+	"github.com/ximplez-go/gf/internal/json"
+	"github.com/ximplez-go/gf/util/gconv"
 )
 
 // Decode converts properties format to map.

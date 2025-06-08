@@ -13,8 +13,8 @@ import (
 	"sync"
 	"syscall"
 
-	"github.com/gogf/gf/v2/internal/intlog"
-	"github.com/gogf/gf/v2/util/gutil"
+	"github.com/ximplez-go/gf/internal/intlog"
+	"github.com/ximplez-go/gf/util/gutil"
 )
 
 // SigHandler defines a function type for signal handling.

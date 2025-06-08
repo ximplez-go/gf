@@ -11,7 +11,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/gogf/gf/v2/text/gregex"
+	"github.com/ximplez-go/gf/text/gregex"
 )
 
 // RuleResidentId implements `resident-id` rule:

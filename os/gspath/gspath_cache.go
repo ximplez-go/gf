@@ -13,9 +13,9 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/gogf/gf/v2/os/gfile"
-	"github.com/gogf/gf/v2/os/gfsnotify"
-	"github.com/gogf/gf/v2/text/gstr"
+	"github.com/ximplez-go/gf/os/gfile"
+	"github.com/ximplez-go/gf/os/gfsnotify"
+	"github.com/ximplez-go/gf/text/gstr"
 )
 
 // updateCacheByPath adds all files under `path` recursively.

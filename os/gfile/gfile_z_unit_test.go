@@ -12,11 +12,11 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/gogf/gf/v2/os/gfile"
-	"github.com/gogf/gf/v2/os/gtime"
-	"github.com/gogf/gf/v2/test/gtest"
-	"github.com/gogf/gf/v2/util/gconv"
-	"github.com/gogf/gf/v2/util/guid"
+	"github.com/ximplez-go/gf/os/gfile"
+	"github.com/ximplez-go/gf/os/gtime"
+	"github.com/ximplez-go/gf/test/gtest"
+	"github.com/ximplez-go/gf/util/gconv"
+	"github.com/ximplez-go/gf/util/guid"
 )
 
 func Test_IsDir(t *testing.T) {

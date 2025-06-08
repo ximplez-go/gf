@@ -12,13 +12,13 @@ import (
 	"strings"
 	"time"
 
-	"github.com/gogf/gf/v2/container/gtype"
-	"github.com/gogf/gf/v2/errors/gcode"
-	"github.com/gogf/gf/v2/errors/gerror"
-	"github.com/gogf/gf/v2/internal/intlog"
-	"github.com/gogf/gf/v2/os/gfile"
-	"github.com/gogf/gf/v2/util/gconv"
-	"github.com/gogf/gf/v2/util/gutil"
+	"github.com/ximplez-go/gf/container/gtype"
+	"github.com/ximplez-go/gf/errors/gcode"
+	"github.com/ximplez-go/gf/errors/gerror"
+	"github.com/ximplez-go/gf/internal/intlog"
+	"github.com/ximplez-go/gf/os/gfile"
+	"github.com/ximplez-go/gf/util/gconv"
+	"github.com/ximplez-go/gf/util/gutil"
 )
 
 // Config is the configuration object for logger.

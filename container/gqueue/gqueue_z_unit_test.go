@@ -12,8 +12,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/gogf/gf/v2/container/gqueue"
-	"github.com/gogf/gf/v2/test/gtest"
+	"github.com/ximplez-go/gf/container/gqueue"
+	"github.com/ximplez-go/gf/test/gtest"
 )
 
 func TestQueue_Len(t *testing.T) {

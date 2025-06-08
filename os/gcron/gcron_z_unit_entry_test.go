@@ -11,9 +11,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/gogf/gf/v2/container/garray"
-	"github.com/gogf/gf/v2/os/gcron"
-	"github.com/gogf/gf/v2/test/gtest"
+	"github.com/ximplez-go/gf/container/garray"
+	"github.com/ximplez-go/gf/os/gcron"
+	"github.com/ximplez-go/gf/test/gtest"
 )
 
 func TestCron_Entry_Operations(t *testing.T) {

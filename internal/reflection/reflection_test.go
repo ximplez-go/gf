@@ -10,8 +10,8 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/gogf/gf/v2/internal/reflection"
-	"github.com/gogf/gf/v2/test/gtest"
+	"github.com/ximplez-go/gf/internal/reflection"
+	"github.com/ximplez-go/gf/test/gtest"
 )
 
 func Test_OriginValueAndKind(t *testing.T) {

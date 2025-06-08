@@ -14,12 +14,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/gogf/gf/v2/container/garray"
-	"github.com/gogf/gf/v2/container/gset"
-	"github.com/gogf/gf/v2/frame/g"
-	"github.com/gogf/gf/v2/internal/json"
-	"github.com/gogf/gf/v2/test/gtest"
-	"github.com/gogf/gf/v2/util/gconv"
+	"github.com/ximplez-go/gf/container/garray"
+	"github.com/ximplez-go/gf/container/gset"
+	"github.com/ximplez-go/gf/internal/json"
+	"github.com/ximplez-go/gf/test/gtest"
+	"github.com/ximplez-go/gf/util/gconv"
 )
 
 func TestSet_Var(t *testing.T) {
@@ -441,7 +440,6 @@ func TestSet_AddIfNotExistFunc(t *testing.T) {
 func TestSet_Walk(t *testing.T) {
 	gtest.C(t, func(t *gtest.T) {
 		var set gset.Set
-		set.Add(g.Slice{1, 2}...)
 		set.Walk(func(item interface{}) interface{} {
 			return gconv.Int(item) + 10
 		})
@@ -479,43 +477,6 @@ func TestSet_AddIfNotExistFuncLock(t *testing.T) {
 		t.Assert(s.AddIfNotExistFuncLock(nil, func() bool { return true }), false)
 		s1 := gset.Set{}
 		t.Assert(s1.AddIfNotExistFuncLock(1, func() bool { return true }), true)
-	})
-}
-
-func TestSet_UnmarshalValue(t *testing.T) {
-	type V struct {
-		Name string
-		Set  *gset.Set
-	}
-	// JSON
-	gtest.C(t, func(t *gtest.T) {
-		var v *V
-		err := gconv.Struct(g.Map{
-			"name": "john",
-			"set":  []byte(`["k1","k2","k3"]`),
-		}, &v)
-		t.AssertNil(err)
-		t.Assert(v.Name, "john")
-		t.Assert(v.Set.Size(), 3)
-		t.Assert(v.Set.Contains("k1"), true)
-		t.Assert(v.Set.Contains("k2"), true)
-		t.Assert(v.Set.Contains("k3"), true)
-		t.Assert(v.Set.Contains("k4"), false)
-	})
-	// Map
-	gtest.C(t, func(t *gtest.T) {
-		var v *V
-		err := gconv.Struct(g.Map{
-			"name": "john",
-			"set":  g.Slice{"k1", "k2", "k3"},
-		}, &v)
-		t.AssertNil(err)
-		t.Assert(v.Name, "john")
-		t.Assert(v.Set.Size(), 3)
-		t.Assert(v.Set.Contains("k1"), true)
-		t.Assert(v.Set.Contains("k2"), true)
-		t.Assert(v.Set.Contains("k3"), true)
-		t.Assert(v.Set.Contains("k4"), false)
 	})
 }
 

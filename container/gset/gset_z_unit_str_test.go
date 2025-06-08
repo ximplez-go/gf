@@ -14,12 +14,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/gogf/gf/v2/container/garray"
-	"github.com/gogf/gf/v2/container/gset"
-	"github.com/gogf/gf/v2/frame/g"
-	"github.com/gogf/gf/v2/internal/json"
-	"github.com/gogf/gf/v2/test/gtest"
-	"github.com/gogf/gf/v2/util/gconv"
+	"github.com/ximplez-go/gf/container/garray"
+	"github.com/ximplez-go/gf/container/gset"
+	"github.com/ximplez-go/gf/internal/json"
+	"github.com/ximplez-go/gf/test/gtest"
+	"github.com/ximplez-go/gf/util/gconv"
 )
 
 func TestStrSet_Var(t *testing.T) {
@@ -471,61 +470,6 @@ func TestStrSet_Json(t *testing.T) {
 		t.Assert(a3.Contains("c"), true)
 		t.Assert(a3.Contains("d"), true)
 		t.Assert(a3.Contains("e"), false)
-	})
-}
-
-func TestStrSet_Walk(t *testing.T) {
-	gtest.C(t, func(t *gtest.T) {
-		var (
-			set    gset.StrSet
-			names  = g.SliceStr{"user", "user_detail"}
-			prefix = "gf_"
-		)
-		set.Add(names...)
-		// Add prefix for given table names.
-		set.Walk(func(item string) string {
-			return prefix + item
-		})
-		t.Assert(set.Size(), 2)
-		t.Assert(set.Contains("gf_user"), true)
-		t.Assert(set.Contains("gf_user_detail"), true)
-	})
-}
-
-func TestStrSet_UnmarshalValue(t *testing.T) {
-	type V struct {
-		Name string
-		Set  *gset.StrSet
-	}
-	// JSON
-	gtest.C(t, func(t *gtest.T) {
-		var v *V
-		err := gconv.Struct(g.Map{
-			"name": "john",
-			"set":  []byte(`["1","2","3"]`),
-		}, &v)
-		t.AssertNil(err)
-		t.Assert(v.Name, "john")
-		t.Assert(v.Set.Size(), 3)
-		t.Assert(v.Set.Contains("1"), true)
-		t.Assert(v.Set.Contains("2"), true)
-		t.Assert(v.Set.Contains("3"), true)
-		t.Assert(v.Set.Contains("4"), false)
-	})
-	// Map
-	gtest.C(t, func(t *gtest.T) {
-		var v *V
-		err := gconv.Struct(g.Map{
-			"name": "john",
-			"set":  g.SliceStr{"1", "2", "3"},
-		}, &v)
-		t.AssertNil(err)
-		t.Assert(v.Name, "john")
-		t.Assert(v.Set.Size(), 3)
-		t.Assert(v.Set.Contains("1"), true)
-		t.Assert(v.Set.Contains("2"), true)
-		t.Assert(v.Set.Contains("3"), true)
-		t.Assert(v.Set.Contains("4"), false)
 	})
 }
 

@@ -12,9 +12,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/gogf/gf/v2/container/garray"
-	"github.com/gogf/gf/v2/os/grpool"
-	"github.com/gogf/gf/v2/test/gtest"
+	"github.com/ximplez-go/gf/container/garray"
+	"github.com/ximplez-go/gf/os/grpool"
+	"github.com/ximplez-go/gf/test/gtest"
 )
 
 func Test_Basic(t *testing.T) {

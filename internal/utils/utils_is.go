@@ -9,7 +9,7 @@ package utils
 import (
 	"reflect"
 
-	"github.com/gogf/gf/v2/internal/empty"
+	"github.com/ximplez-go/gf/internal/empty"
 )
 
 // IsNil checks whether `value` is nil, especially for interface{} type value.

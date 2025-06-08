@@ -3,7 +3,7 @@ package gjson_test
 import (
 	"fmt"
 
-	"github.com/gogf/gf/v2/encoding/gjson"
+	"github.com/ximplez-go/gf/encoding/gjson"
 )
 
 func ExampleJson_SetSplitChar() {

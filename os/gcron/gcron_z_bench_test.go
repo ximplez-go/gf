@@ -10,7 +10,7 @@ import (
 	"context"
 	"testing"
 
-	"github.com/gogf/gf/v2/os/gcron"
+	"github.com/ximplez-go/gf/os/gcron"
 )
 
 func Benchmark_Add(b *testing.B) {

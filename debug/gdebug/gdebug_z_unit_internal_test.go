@@ -12,10 +12,10 @@ import (
 
 func Test_getPackageFromCallerFunction(t *testing.T) {
 	dataMap := map[string]string{
-		"github.com/gogf/gf/v2/test/a":       "github.com/gogf/gf/v2/test/a",
-		"github.com/gogf/gf/v2/test/a.C":     "github.com/gogf/gf/v2/test/a",
-		"github.com/gogf/gf/v2/test/aa.C":    "github.com/gogf/gf/v2/test/aa",
-		"github.com/gogf/gf/v2/test/gtest.C": "github.com/gogf/gf/v2/test/gtest",
+		"github.com/ximplez-go/gf/test/a":       "github.com/ximplez-go/gf/test/a",
+		"github.com/ximplez-go/gf/test/a.C":     "github.com/ximplez-go/gf/test/a",
+		"github.com/ximplez-go/gf/test/aa.C":    "github.com/ximplez-go/gf/test/aa",
+		"github.com/ximplez-go/gf/test/gtest.C": "github.com/ximplez-go/gf/test/gtest",
 	}
 	for functionName, packageName := range dataMap {
 		if result := getPackageFromCallerFunction(functionName); result != packageName {

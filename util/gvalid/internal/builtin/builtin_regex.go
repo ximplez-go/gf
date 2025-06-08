@@ -9,7 +9,7 @@ package builtin
 import (
 	"errors"
 
-	"github.com/gogf/gf/v2/text/gregex"
+	"github.com/ximplez-go/gf/text/gregex"
 )
 
 // RuleRegex implements `regex` rule:

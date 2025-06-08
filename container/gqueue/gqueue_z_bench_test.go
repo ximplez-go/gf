@@ -11,7 +11,7 @@ package gqueue_test
 import (
 	"testing"
 
-	"github.com/gogf/gf/v2/container/gqueue"
+	"github.com/ximplez-go/gf/container/gqueue"
 )
 
 var bn = 20000000

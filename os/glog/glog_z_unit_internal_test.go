@@ -11,8 +11,8 @@ import (
 	"context"
 	"testing"
 
-	"github.com/gogf/gf/v2/test/gtest"
-	"github.com/gogf/gf/v2/text/gstr"
+	"github.com/ximplez-go/gf/test/gtest"
+	"github.com/ximplez-go/gf/text/gstr"
 )
 
 var (

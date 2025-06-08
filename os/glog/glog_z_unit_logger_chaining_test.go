@@ -12,10 +12,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/gogf/gf/v2/os/gfile"
-	"github.com/gogf/gf/v2/os/gtime"
-	"github.com/gogf/gf/v2/test/gtest"
-	"github.com/gogf/gf/v2/text/gstr"
+	"github.com/ximplez-go/gf/os/gfile"
+	"github.com/ximplez-go/gf/os/gtime"
+	"github.com/ximplez-go/gf/test/gtest"
+	"github.com/ximplez-go/gf/text/gstr"
 )
 
 func Test_To(t *testing.T) {
@@ -95,7 +95,7 @@ func Test_Skip(t *testing.T) {
 		fmt.Println(content)
 		t.Assert(gstr.Count(content, defaultLevelPrefixes[LEVEL_ERRO]), 2)
 		t.Assert(gstr.Count(content, "1 2 3"), 2)
-		//t.Assert(gstr.Count(content, "Stack"), 1)
+		// t.Assert(gstr.Count(content, "Stack"), 1)
 	})
 }
 
@@ -114,7 +114,7 @@ func Test_Stack(t *testing.T) {
 		fmt.Println(content)
 		t.Assert(gstr.Count(content, defaultLevelPrefixes[LEVEL_ERRO]), 2)
 		t.Assert(gstr.Count(content, "1 2 3"), 2)
-		//t.Assert(gstr.Count(content, "Stack"), 1)
+		// t.Assert(gstr.Count(content, "Stack"), 1)
 	})
 }
 
@@ -132,7 +132,7 @@ func Test_StackWithFilter(t *testing.T) {
 		fmt.Println(ctx, content)
 		t.Assert(gstr.Count(content, defaultLevelPrefixes[LEVEL_ERRO]), 1)
 		t.Assert(gstr.Count(content, "1 2 3"), 1)
-		//t.Assert(gstr.Count(content, "Stack"), 1)
+		// t.Assert(gstr.Count(content, "Stack"), 1)
 
 	})
 	gtest.C(t, func(t *gtest.T) {
@@ -148,7 +148,7 @@ func Test_StackWithFilter(t *testing.T) {
 		fmt.Println(ctx, content)
 		t.Assert(gstr.Count(content, defaultLevelPrefixes[LEVEL_ERRO]), 1)
 		t.Assert(gstr.Count(content, "1 2 3"), 1)
-		//t.Assert(gstr.Count(content, "Stack"), 0)
+		// t.Assert(gstr.Count(content, "Stack"), 0)
 	})
 }
 
@@ -195,8 +195,8 @@ func Test_Line(t *testing.T) {
 		fmt.Println(content)
 		t.Assert(gstr.Count(content, defaultLevelPrefixes[LEVEL_DEBU]), 1)
 		t.Assert(gstr.Count(content, "1 2 3"), 1)
-		//t.Assert(gstr.Count(content, ".go"), 1)
-		//t.Assert(gstr.Contains(content, gfile.Separator), true)
+		// t.Assert(gstr.Count(content, ".go"), 1)
+		// t.Assert(gstr.Contains(content, gfile.Separator), true)
 	})
 	gtest.C(t, func(t *gtest.T) {
 		path := gfile.Temp(gtime.TimestampNanoStr())
@@ -210,8 +210,8 @@ func Test_Line(t *testing.T) {
 		content := gfile.GetContents(gfile.Join(path, file))
 		t.Assert(gstr.Count(content, defaultLevelPrefixes[LEVEL_DEBU]), 1)
 		t.Assert(gstr.Count(content, "1 2 3"), 1)
-		//t.Assert(gstr.Count(content, ".go"), 1)
-		//t.Assert(gstr.Contains(content, gfile.Separator), false)
+		// t.Assert(gstr.Count(content, ".go"), 1)
+		// t.Assert(gstr.Contains(content, gfile.Separator), false)
 	})
 }
 

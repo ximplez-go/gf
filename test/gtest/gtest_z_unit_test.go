@@ -12,7 +12,7 @@ import (
 	"strconv"
 	"testing"
 
-	"github.com/gogf/gf/v2/test/gtest"
+	"github.com/ximplez-go/gf/test/gtest"
 )
 
 var (

@@ -9,7 +9,7 @@ package glog
 import (
 	"io"
 
-	"github.com/gogf/gf/v2/os/gfile"
+	"github.com/ximplez-go/gf/os/gfile"
 )
 
 // To is a chaining function,

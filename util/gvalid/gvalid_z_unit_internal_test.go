@@ -9,7 +9,7 @@ package gvalid
 import (
 	"testing"
 
-	"github.com/gogf/gf/v2/test/gtest"
+	"github.com/ximplez-go/gf/test/gtest"
 )
 
 func Test_parseSequenceTag(t *testing.T) {

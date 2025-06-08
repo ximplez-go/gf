@@ -10,11 +10,11 @@ import (
 	"math"
 	"reflect"
 
-	"github.com/gogf/gf/v2/encoding/gbinary"
-	"github.com/gogf/gf/v2/internal/empty"
-	"github.com/gogf/gf/v2/internal/json"
-	"github.com/gogf/gf/v2/internal/reflection"
-	"github.com/gogf/gf/v2/util/gconv/internal/localinterface"
+	"github.com/ximplez-go/gf/encoding/gbinary"
+	"github.com/ximplez-go/gf/internal/empty"
+	"github.com/ximplez-go/gf/internal/json"
+	"github.com/ximplez-go/gf/internal/reflection"
+	"github.com/ximplez-go/gf/util/gconv/internal/localinterface"
 )
 
 // Bytes converts `any` to []byte.

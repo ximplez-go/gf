@@ -11,10 +11,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/gogf/gf/v2/internal/json"
-	"github.com/gogf/gf/v2/os/gtime"
-	"github.com/gogf/gf/v2/test/gtest"
-	"github.com/gogf/gf/v2/util/gutil"
+	"github.com/ximplez-go/gf/internal/json"
+	"github.com/ximplez-go/gf/os/gtime"
+	"github.com/ximplez-go/gf/test/gtest"
+	"github.com/ximplez-go/gf/util/gutil"
 )
 
 func Test_New(t *testing.T) {

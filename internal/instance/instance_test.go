@@ -9,8 +9,8 @@ package instance_test
 import (
 	"testing"
 
-	"github.com/gogf/gf/v2/internal/instance"
-	"github.com/gogf/gf/v2/test/gtest"
+	"github.com/ximplez-go/gf/internal/instance"
+	"github.com/ximplez-go/gf/test/gtest"
 )
 
 func Test_SetGet(t *testing.T) {

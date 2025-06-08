@@ -7,8 +7,8 @@
 package gvar
 
 import (
-	"github.com/gogf/gf/v2/internal/deepcopy"
-	"github.com/gogf/gf/v2/util/gutil"
+	"github.com/ximplez-go/gf/internal/deepcopy"
+	"github.com/ximplez-go/gf/util/gutil"
 )
 
 // Copy does a deep copy of current Var and returns a pointer to this Var.

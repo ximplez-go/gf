@@ -11,7 +11,7 @@ import (
 	"context"
 	"time"
 
-	"github.com/gogf/gf/v2/util/gconv"
+	"github.com/ximplez-go/gf/util/gconv"
 )
 
 // Handler is function handler for custom logging content outputs.

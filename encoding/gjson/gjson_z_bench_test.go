@@ -10,7 +10,7 @@ import (
 	json2 "encoding/json"
 	"testing"
 
-	"github.com/gogf/gf/v2/encoding/gjson"
+	"github.com/ximplez-go/gf/encoding/gjson"
 )
 
 var (

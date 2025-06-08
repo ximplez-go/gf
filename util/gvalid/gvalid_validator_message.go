@@ -9,7 +9,7 @@ package gvalid
 import (
 	"context"
 
-	"github.com/gogf/gf/v2/util/gvalid/internal/builtin"
+	"github.com/ximplez-go/gf/util/gvalid/internal/builtin"
 )
 
 // getErrorMessageByRule retrieves and returns the error message for specified rule.
@@ -18,16 +18,10 @@ import (
 func (v *Validator) getErrorMessageByRule(ctx context.Context, ruleKey string, customMsgMap map[string]string) string {
 	content := customMsgMap[ruleKey]
 	if content != "" {
-		// I18n translation.
-		i18nContent := v.i18nManager.GetContent(ctx, content)
-		if i18nContent != "" {
-			return i18nContent
-		}
 		return content
 	}
 
 	// Retrieve default message according to certain rule.
-	content = v.i18nManager.GetContent(ctx, ruleMessagePrefixForI18n+ruleKey)
 	if content == "" {
 		content = defaultErrorMessages[ruleKey]
 	}
@@ -36,10 +30,6 @@ func (v *Validator) getErrorMessageByRule(ctx context.Context, ruleKey string, c
 		if builtinRule := builtin.GetRule(ruleKey); builtinRule != nil {
 			content = builtinRule.Message()
 		}
-	}
-	// If there's no configured rule message, it uses default one.
-	if content == "" {
-		content = v.i18nManager.GetContent(ctx, ruleMessagePrefixForI18n+internalDefaultRuleName)
 	}
 	// If there's no configured rule message, it uses default one.
 	if content == "" {

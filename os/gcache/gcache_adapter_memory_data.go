@@ -11,7 +11,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/gogf/gf/v2/os/gtime"
+	"github.com/ximplez-go/gf/os/gtime"
 )
 
 type memoryData struct {

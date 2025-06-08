@@ -7,7 +7,7 @@
 package gutil
 
 import (
-	"github.com/gogf/gf/v2/internal/deepcopy"
+	"github.com/ximplez-go/gf/internal/deepcopy"
 )
 
 // Copy returns a deep copy of v.

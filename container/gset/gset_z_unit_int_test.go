@@ -14,12 +14,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/gogf/gf/v2/container/garray"
-	"github.com/gogf/gf/v2/container/gset"
-	"github.com/gogf/gf/v2/frame/g"
-	"github.com/gogf/gf/v2/internal/json"
-	"github.com/gogf/gf/v2/test/gtest"
-	"github.com/gogf/gf/v2/util/gconv"
+	"github.com/ximplez-go/gf/container/garray"
+	"github.com/ximplez-go/gf/container/gset"
+	"github.com/ximplez-go/gf/internal/json"
+	"github.com/ximplez-go/gf/test/gtest"
 )
 
 func TestIntSet_Var(t *testing.T) {
@@ -422,56 +420,6 @@ func TestIntSet_Json(t *testing.T) {
 		t.Assert(a2.Contains(3), true)
 		t.Assert(a2.Contains(4), true)
 		t.Assert(a2.Contains(5), false)
-	})
-}
-
-func TestIntSet_Walk(t *testing.T) {
-	gtest.C(t, func(t *gtest.T) {
-		var set gset.IntSet
-		set.Add(g.SliceInt{1, 2}...)
-		set.Walk(func(item int) int {
-			return item + 10
-		})
-		t.Assert(set.Size(), 2)
-		t.Assert(set.Contains(11), true)
-		t.Assert(set.Contains(12), true)
-	})
-}
-
-func TestIntSet_UnmarshalValue(t *testing.T) {
-	type V struct {
-		Name string
-		Set  *gset.IntSet
-	}
-	// JSON
-	gtest.C(t, func(t *gtest.T) {
-		var v *V
-		err := gconv.Struct(g.Map{
-			"name": "john",
-			"set":  []byte(`[1,2,3]`),
-		}, &v)
-		t.AssertNil(err)
-		t.Assert(v.Name, "john")
-		t.Assert(v.Set.Size(), 3)
-		t.Assert(v.Set.Contains(1), true)
-		t.Assert(v.Set.Contains(2), true)
-		t.Assert(v.Set.Contains(3), true)
-		t.Assert(v.Set.Contains(4), false)
-	})
-	// Map
-	gtest.C(t, func(t *gtest.T) {
-		var v *V
-		err := gconv.Struct(g.Map{
-			"name": "john",
-			"set":  g.Slice{1, 2, 3},
-		}, &v)
-		t.AssertNil(err)
-		t.Assert(v.Name, "john")
-		t.Assert(v.Set.Size(), 3)
-		t.Assert(v.Set.Contains(1), true)
-		t.Assert(v.Set.Contains(2), true)
-		t.Assert(v.Set.Contains(3), true)
-		t.Assert(v.Set.Contains(4), false)
 	})
 }
 

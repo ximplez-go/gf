@@ -9,18 +9,18 @@ package gcfg
 import (
 	"context"
 
-	"github.com/gogf/gf/v2/container/garray"
-	"github.com/gogf/gf/v2/container/gmap"
-	"github.com/gogf/gf/v2/container/gvar"
-	"github.com/gogf/gf/v2/encoding/gjson"
-	"github.com/gogf/gf/v2/errors/gerror"
-	"github.com/gogf/gf/v2/internal/command"
-	"github.com/gogf/gf/v2/internal/intlog"
-	"github.com/gogf/gf/v2/os/gfile"
-	"github.com/gogf/gf/v2/os/gfsnotify"
-	"github.com/gogf/gf/v2/os/gres"
-	"github.com/gogf/gf/v2/util/gmode"
-	"github.com/gogf/gf/v2/util/gutil"
+	"github.com/ximplez-go/gf/container/garray"
+	"github.com/ximplez-go/gf/container/gmap"
+	"github.com/ximplez-go/gf/container/gvar"
+	"github.com/ximplez-go/gf/encoding/gjson"
+	"github.com/ximplez-go/gf/errors/gerror"
+	"github.com/ximplez-go/gf/internal/command"
+	"github.com/ximplez-go/gf/internal/intlog"
+	"github.com/ximplez-go/gf/os/gfile"
+	"github.com/ximplez-go/gf/os/gfsnotify"
+	"github.com/ximplez-go/gf/os/gres"
+	"github.com/ximplez-go/gf/util/gmode"
+	"github.com/ximplez-go/gf/util/gutil"
 )
 
 // AdapterFile implements interface Adapter using file.

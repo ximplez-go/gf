@@ -10,8 +10,8 @@ import (
 	"errors"
 	"strings"
 
-	"github.com/gogf/gf/v2/internal/empty"
-	"github.com/gogf/gf/v2/util/gutil"
+	"github.com/ximplez-go/gf/internal/empty"
+	"github.com/ximplez-go/gf/util/gutil"
 )
 
 // RuleRequiredWithoutAll implements `required-without-all` rule:

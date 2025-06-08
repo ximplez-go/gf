@@ -10,10 +10,10 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/gogf/gf/v2/frame/g"
-	"github.com/gogf/gf/v2/test/gtest"
-	"github.com/gogf/gf/v2/util/gtag"
-	"github.com/gogf/gf/v2/util/guid"
+	"github.com/ximplez-go/gf/frame/g"
+	"github.com/ximplez-go/gf/test/gtest"
+	"github.com/ximplez-go/gf/util/gtag"
+	"github.com/ximplez-go/gf/util/guid"
 )
 
 func Test_Set_Get(t *testing.T) {

@@ -12,14 +12,14 @@ import (
 	"testing"
 	"time"
 
-	"github.com/gogf/gf/v2/container/gtype"
-	"github.com/gogf/gf/v2/container/gvar"
-	"github.com/gogf/gf/v2/encoding/gjson"
-	"github.com/gogf/gf/v2/frame/g"
-	"github.com/gogf/gf/v2/internal/json"
-	"github.com/gogf/gf/v2/os/gtime"
-	"github.com/gogf/gf/v2/test/gtest"
-	"github.com/gogf/gf/v2/util/gconv"
+	"github.com/ximplez-go/gf/container/gtype"
+	"github.com/ximplez-go/gf/container/gvar"
+	"github.com/ximplez-go/gf/encoding/gjson"
+	"github.com/ximplez-go/gf/frame/g"
+	"github.com/ximplez-go/gf/internal/json"
+	"github.com/ximplez-go/gf/os/gtime"
+	"github.com/ximplez-go/gf/test/gtest"
+	"github.com/ximplez-go/gf/util/gconv"
 )
 
 // https://github.com/gogf/gf/issues/1227
@@ -114,7 +114,7 @@ func Test_Issue1227(t *testing.T) {
 			if err := gconv.Struct(tt.origin, &p); err != nil {
 				t.Error(err)
 			}
-			//t.Log(tt)
+			// t.Log(tt)
 			t.Assert(p.Name, tt.want)
 		}
 	})

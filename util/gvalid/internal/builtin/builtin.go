@@ -13,7 +13,7 @@ package builtin
 import (
 	"reflect"
 
-	"github.com/gogf/gf/v2/container/gvar"
+	"github.com/ximplez-go/gf/container/gvar"
 )
 
 type Rule interface {

@@ -7,10 +7,10 @@
 package gmap
 
 import (
-	"github.com/gogf/gf/v2/internal/empty"
-	"github.com/gogf/gf/v2/internal/json"
-	"github.com/gogf/gf/v2/internal/rwmutex"
-	"github.com/gogf/gf/v2/util/gconv"
+	"github.com/ximplez-go/gf/internal/empty"
+	"github.com/ximplez-go/gf/internal/json"
+	"github.com/ximplez-go/gf/internal/rwmutex"
+	"github.com/ximplez-go/gf/util/gconv"
 )
 
 // IntStrMap implements map[int]string with RWMutex that has switch.

@@ -9,10 +9,10 @@ package converter
 import (
 	"reflect"
 
-	"github.com/gogf/gf/v2/errors/gcode"
-	"github.com/gogf/gf/v2/errors/gerror"
-	"github.com/gogf/gf/v2/internal/json"
-	"github.com/gogf/gf/v2/util/gconv/internal/localinterface"
+	"github.com/ximplez-go/gf/errors/gcode"
+	"github.com/ximplez-go/gf/errors/gerror"
+	"github.com/ximplez-go/gf/internal/json"
+	"github.com/ximplez-go/gf/util/gconv/internal/localinterface"
 )
 
 // ScanOption is the option for the Scan function.

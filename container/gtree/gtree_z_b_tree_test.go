@@ -10,10 +10,10 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/gogf/gf/v2/container/gtree"
-	"github.com/gogf/gf/v2/container/gvar"
-	"github.com/gogf/gf/v2/test/gtest"
-	"github.com/gogf/gf/v2/util/gutil"
+	"github.com/ximplez-go/gf/container/gtree"
+	"github.com/ximplez-go/gf/container/gvar"
+	"github.com/ximplez-go/gf/test/gtest"
+	"github.com/ximplez-go/gf/util/gutil"
 )
 
 func Test_BTree_Basic(t *testing.T) {
@@ -52,7 +52,7 @@ func Test_BTree_Basic(t *testing.T) {
 }
 
 func Test_BTree_Set_Fun(t *testing.T) {
-	//GetOrSetFunc lock or unlock
+	// GetOrSetFunc lock or unlock
 	gtest.C(t, func(t *gtest.T) {
 		m := gtree.NewBTree(3, gutil.ComparatorString)
 		t.Assert(m.GetOrSetFunc("fun", getValue), 3)
@@ -62,7 +62,7 @@ func Test_BTree_Set_Fun(t *testing.T) {
 		t.Assert(m.Get("funlock"), 3)
 		t.Assert(m.Get("fun"), 3)
 	})
-	//SetIfNotExistFunc lock or unlock
+	// SetIfNotExistFunc lock or unlock
 	gtest.C(t, func(t *gtest.T) {
 		m := gtree.NewBTree(3, gutil.ComparatorString)
 		t.Assert(m.SetIfNotExistFunc("fun", getValue), true)
@@ -197,28 +197,28 @@ func Test_BTree_IteratorFrom(t *testing.T) {
 
 func Test_BTree_Clone(t *testing.T) {
 	gtest.C(t, func(t *gtest.T) {
-		//clone 方法是深克隆
+		// clone 方法是深克隆
 		m := gtree.NewBTreeFrom(3, gutil.ComparatorString, map[interface{}]interface{}{1: 1, "key1": "val1"})
 		m_clone := m.Clone()
 		m.Remove(1)
-		//修改原 map,clone 后的 map 不影响
+		// 修改原 map,clone 后的 map 不影响
 		t.AssertIN(1, m_clone.Keys())
 
 		m_clone.Remove("key1")
-		//修改clone map,原 map 不影响
+		// 修改clone map,原 map 不影响
 		t.AssertIN("key1", m.Keys())
 	})
 }
 
 func Test_BTree_LRNode(t *testing.T) {
 	expect := map[interface{}]interface{}{"key4": "val4", "key1": "val1", "key2": "val2", "key3": "val3"}
-	//safe
+	// safe
 	gtest.C(t, func(t *gtest.T) {
 		m := gtree.NewBTreeFrom(3, gutil.ComparatorString, expect)
 		t.Assert(m.Left().Key, "key1")
 		t.Assert(m.Right().Key, "key4")
 	})
-	//unsafe
+	// unsafe
 	gtest.C(t, func(t *gtest.T) {
 		m := gtree.NewBTreeFrom(3, gutil.ComparatorString, expect, true)
 		t.Assert(m.Left().Key, "key1")

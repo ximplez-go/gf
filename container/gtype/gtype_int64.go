@@ -10,7 +10,7 @@ import (
 	"strconv"
 	"sync/atomic"
 
-	"github.com/gogf/gf/v2/util/gconv"
+	"github.com/ximplez-go/gf/util/gconv"
 )
 
 // Int64 is a struct for concurrent-safe operation for type int64.

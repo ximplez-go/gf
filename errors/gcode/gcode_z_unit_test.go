@@ -9,8 +9,8 @@ package gcode_test
 import (
 	"testing"
 
-	"github.com/gogf/gf/v2/errors/gcode"
-	"github.com/gogf/gf/v2/test/gtest"
+	"github.com/ximplez-go/gf/errors/gcode"
+	"github.com/ximplez-go/gf/test/gtest"
 )
 
 func Test_Case(t *testing.T) {

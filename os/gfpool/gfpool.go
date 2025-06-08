@@ -11,9 +11,9 @@ import (
 	"os"
 	"time"
 
-	"github.com/gogf/gf/v2/container/gmap"
-	"github.com/gogf/gf/v2/container/gpool"
-	"github.com/gogf/gf/v2/container/gtype"
+	"github.com/ximplez-go/gf/container/gmap"
+	"github.com/ximplez-go/gf/container/gpool"
+	"github.com/ximplez-go/gf/container/gtype"
 )
 
 // Pool pointer pool.

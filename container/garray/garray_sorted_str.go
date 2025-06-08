@@ -12,11 +12,11 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/gogf/gf/v2/internal/json"
-	"github.com/gogf/gf/v2/internal/rwmutex"
-	"github.com/gogf/gf/v2/text/gstr"
-	"github.com/gogf/gf/v2/util/gconv"
-	"github.com/gogf/gf/v2/util/grand"
+	"github.com/ximplez-go/gf/internal/json"
+	"github.com/ximplez-go/gf/internal/rwmutex"
+	"github.com/ximplez-go/gf/text/gstr"
+	"github.com/ximplez-go/gf/util/gconv"
+	"github.com/ximplez-go/gf/util/grand"
 )
 
 // SortedStrArray is a golang sorted string array with rich features.

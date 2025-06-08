@@ -13,9 +13,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/gogf/gf/v2/container/garray"
-	"github.com/gogf/gf/v2/os/gtimer"
-	"github.com/gogf/gf/v2/test/gtest"
+	"github.com/ximplez-go/gf/container/garray"
+	"github.com/ximplez-go/gf/os/gtimer"
+	"github.com/ximplez-go/gf/test/gtest"
 )
 
 func TestJob_Start_Stop_Close(t *testing.T) {
@@ -89,7 +89,7 @@ func TestJob_SetTimes(t *testing.T) {
 			array.Append(1)
 		})
 		job.SetTimes(2)
-		//job.IsSingleton()
+		// job.IsSingleton()
 		time.Sleep(1200 * time.Millisecond)
 		t.Assert(array.Len(), 2)
 	})

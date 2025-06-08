@@ -10,7 +10,7 @@ import (
 	"context"
 	"time"
 
-	"github.com/gogf/gf/v2/container/gtype"
+	"github.com/ximplez-go/gf/container/gtype"
 )
 
 // New creates and returns a Timer.

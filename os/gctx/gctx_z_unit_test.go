@@ -10,8 +10,8 @@ import (
 	"context"
 	"testing"
 
-	"github.com/gogf/gf/v2/os/gctx"
-	"github.com/gogf/gf/v2/test/gtest"
+	"github.com/ximplez-go/gf/os/gctx"
+	"github.com/ximplez-go/gf/test/gtest"
 )
 
 func Test_New(t *testing.T) {

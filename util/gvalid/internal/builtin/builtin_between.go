@@ -11,7 +11,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/gogf/gf/v2/text/gstr"
+	"github.com/ximplez-go/gf/text/gstr"
 )
 
 // RuleBetween implements `between` rule:

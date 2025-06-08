@@ -10,12 +10,12 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/gogf/gf/v2/container/gvar"
-	"github.com/gogf/gf/v2/errors/gerror"
-	"github.com/gogf/gf/v2/frame/g"
-	"github.com/gogf/gf/v2/os/gtime"
-	"github.com/gogf/gf/v2/test/gtest"
-	"github.com/gogf/gf/v2/util/gconv"
+	"github.com/ximplez-go/gf/container/gvar"
+	"github.com/ximplez-go/gf/errors/gerror"
+	"github.com/ximplez-go/gf/frame/g"
+	"github.com/ximplez-go/gf/os/gtime"
+	"github.com/ximplez-go/gf/test/gtest"
+	"github.com/ximplez-go/gf/util/gconv"
 )
 
 type scanStructTest struct {
@@ -367,10 +367,10 @@ func TestScan(t *testing.T) {
 			t.Assert(test["Name"], scanExpects.structSub.Place)
 			t.Assert(test["Place"], scanExpects.structSub.Name)
 
-			//t.Logf("%#v", test)
+			// t.Logf("%#v", test)
 			err = gconv.Scan(test, &scanExpects.structSubPtr, mapParameter)
 			t.AssertNil(err)
-			//t.Logf("%#v", scanExpects.structSubPtr)
+			// t.Logf("%#v", scanExpects.structSubPtr)
 			t.Assert(test["Name"], scanExpects.structSubPtr.Place)
 			t.Assert(test["Place"], scanExpects.structSubPtr.Name)
 		}

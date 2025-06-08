@@ -7,8 +7,8 @@
 package gtrace
 
 import (
-	"github.com/gogf/gf/v2/internal/json"
-	"github.com/gogf/gf/v2/util/gconv"
+	"github.com/ximplez-go/gf/internal/json"
+	"github.com/ximplez-go/gf/util/gconv"
 )
 
 // Carrier is the storage medium used by a TextMapPropagator.

@@ -10,9 +10,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/gogf/gf/v2/container/garray"
-	"github.com/gogf/gf/v2/internal/mutex"
-	"github.com/gogf/gf/v2/test/gtest"
+	"github.com/ximplez-go/gf/container/garray"
+	"github.com/ximplez-go/gf/internal/mutex"
+	"github.com/ximplez-go/gf/test/gtest"
 )
 
 func TestMutexIsSafe(t *testing.T) {

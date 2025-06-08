@@ -11,16 +11,14 @@ import (
 	"errors"
 	"reflect"
 
-	"github.com/gogf/gf/v2/i18n/gi18n"
-	"github.com/gogf/gf/v2/internal/reflection"
-	"github.com/gogf/gf/v2/internal/utils"
-	"github.com/gogf/gf/v2/text/gstr"
-	"github.com/gogf/gf/v2/util/gconv"
+	"github.com/ximplez-go/gf/internal/reflection"
+	"github.com/ximplez-go/gf/internal/utils"
+	"github.com/ximplez-go/gf/text/gstr"
+	"github.com/ximplez-go/gf/util/gconv"
 )
 
 // Validator is the validation manager for chaining operations.
 type Validator struct {
-	i18nManager                       *gi18n.Manager      // I18n manager for error message translation.
 	data                              interface{}         // Validation data, which can be a map, struct or a certain value to be validated.
 	assoc                             interface{}         // Associated data, which is usually a map, for union validation.
 	rules                             interface{}         // Custom validation data.
@@ -35,7 +33,6 @@ type Validator struct {
 // New creates and returns a new Validator.
 func New() *Validator {
 	return &Validator{
-		i18nManager: gi18n.Instance(),          // Use default i18n manager.
 		ruleFuncMap: make(map[string]RuleFunc), // Custom rule function storing map.
 	}
 }
@@ -89,16 +86,6 @@ func (v *Validator) Run(ctx context.Context) Error {
 func (v *Validator) Clone() *Validator {
 	newValidator := New()
 	*newValidator = *v
-	return newValidator
-}
-
-// I18n sets the i18n manager for the validator.
-func (v *Validator) I18n(i18nManager *gi18n.Manager) *Validator {
-	if i18nManager == nil {
-		return v
-	}
-	newValidator := v.Clone()
-	newValidator.i18nManager = i18nManager
 	return newValidator
 }
 

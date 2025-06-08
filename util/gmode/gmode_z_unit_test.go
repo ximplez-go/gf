@@ -11,8 +11,8 @@ package gmode_test
 import (
 	"testing"
 
-	"github.com/gogf/gf/v2/test/gtest"
-	"github.com/gogf/gf/v2/util/gmode"
+	"github.com/ximplez-go/gf/test/gtest"
+	"github.com/ximplez-go/gf/util/gmode"
 )
 
 func Test_AutoCheckSourceCodes(t *testing.T) {

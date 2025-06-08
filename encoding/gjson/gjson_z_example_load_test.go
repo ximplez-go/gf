@@ -9,8 +9,8 @@ package gjson_test
 import (
 	"fmt"
 
-	"github.com/gogf/gf/v2/encoding/gjson"
-	"github.com/gogf/gf/v2/test/gtest"
+	"github.com/ximplez-go/gf/encoding/gjson"
+	"github.com/ximplez-go/gf/test/gtest"
 )
 
 func ExampleLoad() {
@@ -220,7 +220,7 @@ func ExampleLoad_Properties() {
 	fmt.Println(j.Get("pr.score"))
 	fmt.Println(j.Get("pr.sex"))
 
-	//Output:
+	// Output:
 	// john
 	// 100
 	// 0

@@ -10,13 +10,13 @@ import (
 	"testing"
 	"time"
 
-	"github.com/gogf/gf/v2/crypto/gcrc32"
-	"github.com/gogf/gf/v2/encoding/gbinary"
-	"github.com/gogf/gf/v2/errors/gerror"
-	"github.com/gogf/gf/v2/frame/g"
-	"github.com/gogf/gf/v2/os/gtime"
-	"github.com/gogf/gf/v2/test/gtest"
-	"github.com/gogf/gf/v2/util/gconv"
+	"github.com/ximplez-go/gf/crypto/gcrc32"
+	"github.com/ximplez-go/gf/encoding/gbinary"
+	"github.com/ximplez-go/gf/errors/gerror"
+	"github.com/ximplez-go/gf/frame/g"
+	"github.com/ximplez-go/gf/os/gtime"
+	"github.com/ximplez-go/gf/test/gtest"
+	"github.com/ximplez-go/gf/util/gconv"
 )
 
 type MyTime struct {

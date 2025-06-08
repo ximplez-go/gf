@@ -13,8 +13,8 @@ package g
 import (
 	"context"
 
-	"github.com/gogf/gf/v2/container/gvar"
-	"github.com/gogf/gf/v2/util/gmeta"
+	"github.com/ximplez-go/gf/container/gvar"
+	"github.com/ximplez-go/gf/util/gmeta"
 )
 
 type (

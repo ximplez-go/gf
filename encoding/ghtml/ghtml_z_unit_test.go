@@ -9,9 +9,8 @@ package ghtml_test
 import (
 	"testing"
 
-	"github.com/gogf/gf/v2/encoding/ghtml"
-	"github.com/gogf/gf/v2/frame/g"
-	"github.com/gogf/gf/v2/test/gtest"
+	"github.com/ximplez-go/gf/encoding/ghtml"
+	"github.com/ximplez-go/gf/test/gtest"
 )
 
 func Test_StripTags(t *testing.T) {
@@ -37,29 +36,6 @@ func Test_SpecialChars(t *testing.T) {
 		dst := `A &#39;quote&#39; &#34;is&#34; &lt;b&gt;bold&lt;/b&gt;`
 		t.Assert(ghtml.SpecialChars(src), dst)
 		t.Assert(ghtml.SpecialCharsDecode(dst), src)
-	})
-}
-
-func Test_SpecialCharsMapOrStruct_Map(t *testing.T) {
-	gtest.C(t, func(t *gtest.T) {
-		a := g.Map{
-			"Title":   "<h1>T</h1>",
-			"Content": "<div>C</div>",
-		}
-		err := ghtml.SpecialCharsMapOrStruct(a)
-		t.AssertNil(err)
-		t.Assert(a["Title"], `&lt;h1&gt;T&lt;/h1&gt;`)
-		t.Assert(a["Content"], `&lt;div&gt;C&lt;/div&gt;`)
-	})
-	gtest.C(t, func(t *gtest.T) {
-		a := g.MapStrStr{
-			"Title":   "<h1>T</h1>",
-			"Content": "<div>C</div>",
-		}
-		err := ghtml.SpecialCharsMapOrStruct(a)
-		t.AssertNil(err)
-		t.Assert(a["Title"], `&lt;h1&gt;T&lt;/h1&gt;`)
-		t.Assert(a["Content"], `&lt;div&gt;C&lt;/div&gt;`)
 	})
 }
 

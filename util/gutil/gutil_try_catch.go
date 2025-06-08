@@ -9,8 +9,8 @@ package gutil
 import (
 	"context"
 
-	"github.com/gogf/gf/v2/errors/gcode"
-	"github.com/gogf/gf/v2/errors/gerror"
+	"github.com/ximplez-go/gf/errors/gcode"
+	"github.com/ximplez-go/gf/errors/gerror"
 )
 
 // Throw throws out an exception, which can be caught be TryCatch or recover.

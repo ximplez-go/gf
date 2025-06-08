@@ -11,12 +11,12 @@ import (
 	"math"
 	"time"
 
-	"github.com/gogf/gf/v2/container/glist"
-	"github.com/gogf/gf/v2/container/gset"
-	"github.com/gogf/gf/v2/container/gtype"
-	"github.com/gogf/gf/v2/container/gvar"
-	"github.com/gogf/gf/v2/os/gtime"
-	"github.com/gogf/gf/v2/os/gtimer"
+	"github.com/ximplez-go/gf/container/glist"
+	"github.com/ximplez-go/gf/container/gset"
+	"github.com/ximplez-go/gf/container/gtype"
+	"github.com/ximplez-go/gf/container/gvar"
+	"github.com/ximplez-go/gf/os/gtime"
+	"github.com/ximplez-go/gf/os/gtimer"
 )
 
 // AdapterMemory is an adapter implements using memory.

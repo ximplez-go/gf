@@ -9,8 +9,8 @@ package gcache
 import (
 	"sync"
 
-	"github.com/gogf/gf/v2/container/glist"
-	"github.com/gogf/gf/v2/container/gmap"
+	"github.com/ximplez-go/gf/container/glist"
+	"github.com/ximplez-go/gf/container/gmap"
 )
 
 // memoryLru holds LRU info.

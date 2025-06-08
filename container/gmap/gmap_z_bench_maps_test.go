@@ -11,8 +11,8 @@ package gmap_test
 import (
 	"testing"
 
-	"github.com/gogf/gf/v2/container/gmap"
-	"github.com/gogf/gf/v2/util/gutil"
+	"github.com/ximplez-go/gf/container/gmap"
+	"github.com/ximplez-go/gf/util/gutil"
 )
 
 var hashMap = gmap.New(true)

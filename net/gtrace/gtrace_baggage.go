@@ -11,9 +11,9 @@ import (
 
 	"go.opentelemetry.io/otel/baggage"
 
-	"github.com/gogf/gf/v2/container/gmap"
-	"github.com/gogf/gf/v2/container/gvar"
-	"github.com/gogf/gf/v2/util/gconv"
+	"github.com/ximplez-go/gf/container/gmap"
+	"github.com/ximplez-go/gf/container/gvar"
+	"github.com/ximplez-go/gf/util/gconv"
 )
 
 // Baggage holds the data through all tracing spans.

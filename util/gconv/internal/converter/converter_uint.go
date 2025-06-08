@@ -11,11 +11,11 @@ import (
 	"reflect"
 	"strconv"
 
-	"github.com/gogf/gf/v2/encoding/gbinary"
-	"github.com/gogf/gf/v2/errors/gcode"
-	"github.com/gogf/gf/v2/errors/gerror"
-	"github.com/gogf/gf/v2/internal/empty"
-	"github.com/gogf/gf/v2/util/gconv/internal/localinterface"
+	"github.com/ximplez-go/gf/encoding/gbinary"
+	"github.com/ximplez-go/gf/errors/gcode"
+	"github.com/ximplez-go/gf/errors/gerror"
+	"github.com/ximplez-go/gf/internal/empty"
+	"github.com/ximplez-go/gf/util/gconv/internal/localinterface"
 )
 
 // Uint converts `any` to uint.

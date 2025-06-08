@@ -12,15 +12,15 @@ import (
 	"runtime"
 	"time"
 
-	"github.com/gogf/gf/v2/os/genv"
-	"github.com/gogf/gf/v2/os/gfile"
-	"github.com/gogf/gf/v2/text/gstr"
-	"github.com/gogf/gf/v2/util/gconv"
+	"github.com/ximplez-go/gf/os/genv"
+	"github.com/ximplez-go/gf/os/gfile"
+	"github.com/ximplez-go/gf/text/gstr"
+	"github.com/ximplez-go/gf/util/gconv"
 )
 
 const (
 	envKeyPPid            = "GPROC_PPID"
-	tracingInstrumentName = "github.com/gogf/gf/v2/os/gproc.Process"
+	tracingInstrumentName = "github.com/ximplez-go/gf/os/gproc.Process"
 )
 
 var (

@@ -9,8 +9,8 @@ import (
 	"net/url"
 	"testing"
 
-	"github.com/gogf/gf/v2/encoding/gurl"
-	"github.com/gogf/gf/v2/test/gtest"
+	"github.com/ximplez-go/gf/encoding/gurl"
+	"github.com/ximplez-go/gf/test/gtest"
 )
 
 var (

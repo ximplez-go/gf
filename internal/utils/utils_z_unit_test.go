@@ -12,8 +12,8 @@ import (
 	"testing"
 	"unsafe"
 
-	"github.com/gogf/gf/v2/internal/utils"
-	"github.com/gogf/gf/v2/test/gtest"
+	"github.com/ximplez-go/gf/internal/utils"
+	"github.com/ximplez-go/gf/test/gtest"
 )
 
 func Test_ReadCloser(t *testing.T) {

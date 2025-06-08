@@ -10,7 +10,7 @@ import (
 	"bytes"
 	"os"
 
-	"github.com/gogf/gf/v2/errors/gerror"
+	"github.com/ximplez-go/gf/errors/gerror"
 )
 
 // Close implements interface of http.File.

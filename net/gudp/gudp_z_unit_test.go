@@ -13,10 +13,10 @@ import (
 	"testing"
 	"time"
 
-	"github.com/gogf/gf/v2/net/gudp"
-	"github.com/gogf/gf/v2/os/glog"
-	"github.com/gogf/gf/v2/test/gtest"
-	"github.com/gogf/gf/v2/util/gconv"
+	"github.com/ximplez-go/gf/net/gudp"
+	"github.com/ximplez-go/gf/os/glog"
+	"github.com/ximplez-go/gf/test/gtest"
+	"github.com/ximplez-go/gf/util/gconv"
 )
 
 var (

@@ -10,7 +10,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/gogf/gf/v2/os/gfile"
+	"github.com/ximplez-go/gf/os/gfile"
 )
 
 func ExampleGetContentsWithCache() {

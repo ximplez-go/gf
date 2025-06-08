@@ -13,10 +13,10 @@ import (
 	"reflect"
 	"time"
 
-	"github.com/gogf/gf/v2/os/gtime"
-	"github.com/gogf/gf/v2/util/gconv/internal/converter"
-	"github.com/gogf/gf/v2/util/gconv/internal/localinterface"
-	"github.com/gogf/gf/v2/util/gconv/internal/structcache"
+	"github.com/ximplez-go/gf/os/gtime"
+	"github.com/ximplez-go/gf/util/gconv/internal/converter"
+	"github.com/ximplez-go/gf/util/gconv/internal/localinterface"
+	"github.com/ximplez-go/gf/util/gconv/internal/structcache"
 )
 
 // Converter is the manager for type converting.

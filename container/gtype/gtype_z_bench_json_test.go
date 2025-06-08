@@ -11,8 +11,8 @@ package gtype_test
 import (
 	"testing"
 
-	"github.com/gogf/gf/v2/container/gtype"
-	"github.com/gogf/gf/v2/internal/json"
+	"github.com/ximplez-go/gf/container/gtype"
+	"github.com/ximplez-go/gf/internal/json"
 )
 
 var (

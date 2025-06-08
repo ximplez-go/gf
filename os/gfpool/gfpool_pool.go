@@ -10,10 +10,10 @@ import (
 	"os"
 	"time"
 
-	"github.com/gogf/gf/v2/container/gpool"
-	"github.com/gogf/gf/v2/container/gtype"
-	"github.com/gogf/gf/v2/errors/gerror"
-	"github.com/gogf/gf/v2/os/gfsnotify"
+	"github.com/ximplez-go/gf/container/gpool"
+	"github.com/ximplez-go/gf/container/gtype"
+	"github.com/ximplez-go/gf/errors/gerror"
+	"github.com/ximplez-go/gf/os/gfsnotify"
 )
 
 // New creates and returns a file pointer pool with given file path, flag and opening permission.

@@ -12,7 +12,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/gogf/gf/v2/test/gtest"
+	"github.com/ximplez-go/gf/test/gtest"
 )
 
 func Test_Signal(t *testing.T) {

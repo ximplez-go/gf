@@ -11,8 +11,8 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/gogf/gf/v2/text/gregex"
-	"github.com/gogf/gf/v2/text/gstr"
+	"github.com/ximplez-go/gf/text/gregex"
+	"github.com/ximplez-go/gf/text/gstr"
 )
 
 var (

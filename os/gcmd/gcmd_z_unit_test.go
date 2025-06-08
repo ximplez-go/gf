@@ -15,13 +15,13 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/gogf/gf/v2/errors/gcode"
-	"github.com/gogf/gf/v2/errors/gerror"
-	"github.com/gogf/gf/v2/frame/g"
-	"github.com/gogf/gf/v2/os/gcmd"
-	"github.com/gogf/gf/v2/os/gctx"
-	"github.com/gogf/gf/v2/os/genv"
-	"github.com/gogf/gf/v2/test/gtest"
+	"github.com/ximplez-go/gf/errors/gcode"
+	"github.com/ximplez-go/gf/errors/gerror"
+	"github.com/ximplez-go/gf/frame/g"
+	"github.com/ximplez-go/gf/os/gcmd"
+	"github.com/ximplez-go/gf/os/gctx"
+	"github.com/ximplez-go/gf/os/genv"
+	"github.com/ximplez-go/gf/test/gtest"
 )
 
 func Test_Default(t *testing.T) {
@@ -196,15 +196,15 @@ gf get golang.org/x/sys
 			g.Log().Fatal(ctx, err)
 		}
 		// build
-		//-n, --name       output binary name
-		//-v, --version    output binary version
-		//-a, --arch       output binary architecture, multiple arch separated with ','
-		//-s, --system     output binary system, multiple os separated with ','
-		//-o, --output     output binary path, used when building single binary file
-		//-p, --path       output binary directory path, default is './bin'
-		//-e, --extra      extra custom "go build" options
-		//-m, --mod        like "-mod" option of "go build", use "-m none" to disable go module
-		//-c, --cgo        enable or disable cgo feature, it's disabled in default
+		// -n, --name       output binary name
+		// -v, --version    output binary version
+		// -a, --arch       output binary architecture, multiple arch separated with ','
+		// -s, --system     output binary system, multiple os separated with ','
+		// -o, --output     output binary path, used when building single binary file
+		// -p, --path       output binary directory path, default is './bin'
+		// -e, --extra      extra custom "go build" options
+		// -m, --mod        like "-mod" option of "go build", use "-m none" to disable go module
+		// -c, --cgo        enable or disable cgo feature, it's disabled in default
 
 		commandBuild := gcmd.Command{
 			Name:  "build",

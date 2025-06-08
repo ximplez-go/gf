@@ -11,7 +11,7 @@ import (
 	"strconv"
 	"sync/atomic"
 
-	"github.com/gogf/gf/v2/util/gconv"
+	"github.com/ximplez-go/gf/util/gconv"
 )
 
 // Float32 is a struct for concurrent-safe operation for type float32.

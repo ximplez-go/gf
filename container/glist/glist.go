@@ -13,10 +13,10 @@ import (
 	"bytes"
 	"container/list"
 
-	"github.com/gogf/gf/v2/internal/deepcopy"
-	"github.com/gogf/gf/v2/internal/json"
-	"github.com/gogf/gf/v2/internal/rwmutex"
-	"github.com/gogf/gf/v2/util/gconv"
+	"github.com/ximplez-go/gf/internal/deepcopy"
+	"github.com/ximplez-go/gf/internal/json"
+	"github.com/ximplez-go/gf/internal/rwmutex"
+	"github.com/ximplez-go/gf/util/gconv"
 )
 
 type (

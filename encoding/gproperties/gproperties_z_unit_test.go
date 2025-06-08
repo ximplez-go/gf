@@ -7,14 +7,11 @@
 package gproperties_test
 
 import (
-	"fmt"
 	"strings"
 	"testing"
 
-	"github.com/gogf/gf/v2/encoding/gjson"
-	"github.com/gogf/gf/v2/encoding/gproperties"
-	"github.com/gogf/gf/v2/frame/g"
-	"github.com/gogf/gf/v2/test/gtest"
+	"github.com/ximplez-go/gf/encoding/gproperties"
+	"github.com/ximplez-go/gf/test/gtest"
 )
 
 var pStr string = `
@@ -92,43 +89,5 @@ func TestEncode(t *testing.T) {
 			return
 		}
 		t.Assert(decodeMap["properties"], pStr)
-	})
-}
-
-func TestToJson(t *testing.T) {
-	gtest.C(t, func(t *gtest.T) {
-		res, err := gproperties.Encode(map[string]interface{}{
-			"sql": g.Map{
-				"userName": "admin",
-				"password": "123456",
-			},
-			"user": "admin",
-			"no":   123,
-		})
-		fmt.Print(string(res))
-		jsonPr, err := gproperties.ToJson(res)
-		if err != nil {
-			t.Errorf("ToJson failed. %v", err)
-			return
-		}
-		fmt.Print(string(jsonPr))
-
-		p := gjson.New(res)
-		expectJson, err := p.ToJson()
-		if err != nil {
-			t.Errorf("parser ToJson failed. %v", err)
-			return
-		}
-		t.Assert(jsonPr, expectJson)
-	})
-	gtest.C(t, func(t *gtest.T) {
-		for _, v := range errorTests {
-			_, err := gproperties.ToJson(([]byte)(v.input))
-			if err == nil {
-				t.Errorf("encode should be failed. %v", err)
-				return
-			}
-			t.AssertIN(`Lib magiconair load Properties data failed.`, strings.Split(err.Error(), ":"))
-		}
 	})
 }

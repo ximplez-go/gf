@@ -13,8 +13,8 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/gogf/gf/v2/internal/consts"
-	"github.com/gogf/gf/v2/internal/errors"
+	"github.com/ximplez-go/gf/internal/consts"
+	"github.com/ximplez-go/gf/internal/errors"
 )
 
 // stackInfo manages stack info of certain error.

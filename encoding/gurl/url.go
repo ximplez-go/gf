@@ -11,7 +11,7 @@ import (
 	"net/url"
 	"strings"
 
-	"github.com/gogf/gf/v2/errors/gerror"
+	"github.com/ximplez-go/gf/errors/gerror"
 )
 
 // Encode escapes the string so it can be safely placed

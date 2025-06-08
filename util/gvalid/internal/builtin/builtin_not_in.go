@@ -10,7 +10,7 @@ import (
 	"errors"
 	"strings"
 
-	"github.com/gogf/gf/v2/text/gstr"
+	"github.com/ximplez-go/gf/text/gstr"
 )
 
 // RuleNotIn implements `not-in` rule:

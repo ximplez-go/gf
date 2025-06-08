@@ -11,10 +11,10 @@ import (
 	"os"
 	"testing"
 
-	"github.com/gogf/gf/v2/frame/g"
-	"github.com/gogf/gf/v2/os/gcmd"
-	"github.com/gogf/gf/v2/os/gctx"
-	"github.com/gogf/gf/v2/test/gtest"
+	"github.com/ximplez-go/gf/frame/g"
+	"github.com/ximplez-go/gf/os/gcmd"
+	"github.com/ximplez-go/gf/os/gctx"
+	"github.com/ximplez-go/gf/test/gtest"
 )
 
 type TestNoNameTagCase struct {

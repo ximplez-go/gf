@@ -10,8 +10,8 @@ import (
 	"reflect"
 	"time"
 
-	"github.com/gogf/gf/v2/internal/json"
-	"github.com/gogf/gf/v2/os/gtime"
+	"github.com/ximplez-go/gf/internal/json"
+	"github.com/ximplez-go/gf/os/gtime"
 )
 
 // ConvertOption is the option for converting.

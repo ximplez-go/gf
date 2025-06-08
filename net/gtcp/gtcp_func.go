@@ -12,8 +12,8 @@ import (
 	"net"
 	"time"
 
-	"github.com/gogf/gf/v2/errors/gerror"
-	"github.com/gogf/gf/v2/os/gfile"
+	"github.com/ximplez-go/gf/errors/gerror"
+	"github.com/ximplez-go/gf/os/gfile"
 )
 
 const (

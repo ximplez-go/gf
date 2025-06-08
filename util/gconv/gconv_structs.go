@@ -6,7 +6,7 @@
 
 package gconv
 
-import "github.com/gogf/gf/v2/util/gconv/internal/converter"
+import "github.com/ximplez-go/gf/util/gconv/internal/converter"
 
 // Structs converts any slice to given struct slice.
 // Also see Scan, Struct.

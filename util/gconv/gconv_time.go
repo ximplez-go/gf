@@ -9,7 +9,7 @@ package gconv
 import (
 	"time"
 
-	"github.com/gogf/gf/v2/os/gtime"
+	"github.com/ximplez-go/gf/os/gtime"
 )
 
 // Time converts `any` to time.Time.

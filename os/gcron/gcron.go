@@ -11,8 +11,8 @@ import (
 	"context"
 	"time"
 
-	"github.com/gogf/gf/v2/os/glog"
-	"github.com/gogf/gf/v2/os/gtimer"
+	"github.com/ximplez-go/gf/os/glog"
+	"github.com/ximplez-go/gf/os/gtimer"
 )
 
 const (

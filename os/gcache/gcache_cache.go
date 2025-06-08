@@ -9,7 +9,7 @@ package gcache
 import (
 	"context"
 
-	"github.com/gogf/gf/v2/util/gconv"
+	"github.com/ximplez-go/gf/util/gconv"
 )
 
 // Cache struct.

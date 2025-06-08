@@ -9,8 +9,8 @@ package gtcp
 import (
 	"time"
 
-	"github.com/gogf/gf/v2/container/gmap"
-	"github.com/gogf/gf/v2/container/gpool"
+	"github.com/ximplez-go/gf/container/gmap"
+	"github.com/ximplez-go/gf/container/gpool"
 )
 
 // PoolConn is a connection with pool feature for TCP.

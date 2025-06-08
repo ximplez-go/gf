@@ -9,9 +9,9 @@ package gjson
 import (
 	"reflect"
 
-	"github.com/gogf/gf/v2/internal/reflection"
-	"github.com/gogf/gf/v2/internal/rwmutex"
-	"github.com/gogf/gf/v2/util/gconv"
+	"github.com/ximplez-go/gf/internal/reflection"
+	"github.com/ximplez-go/gf/internal/rwmutex"
+	"github.com/ximplez-go/gf/util/gconv"
 )
 
 // New creates a Json object with any variable type of `data`, but `data` should be a map

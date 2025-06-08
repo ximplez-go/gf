@@ -11,11 +11,11 @@ import (
 	"context"
 	"runtime"
 
-	"github.com/gogf/gf/v2"
-	"github.com/gogf/gf/v2/container/gvar"
-	"github.com/gogf/gf/v2/encoding/gbase64"
-	"github.com/gogf/gf/v2/internal/intlog"
-	"github.com/gogf/gf/v2/internal/json"
+	"github.com/ximplez-go/gf"
+	"github.com/ximplez-go/gf/container/gvar"
+	"github.com/ximplez-go/gf/encoding/gbase64"
+	"github.com/ximplez-go/gf/internal/intlog"
+	"github.com/ximplez-go/gf/internal/json"
 )
 
 // BuildInfo maintains the built info of the current binary.

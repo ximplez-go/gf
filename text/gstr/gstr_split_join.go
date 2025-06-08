@@ -9,8 +9,8 @@ package gstr
 import (
 	"strings"
 
-	"github.com/gogf/gf/v2/internal/utils"
-	"github.com/gogf/gf/v2/util/gconv"
+	"github.com/ximplez-go/gf/internal/utils"
+	"github.com/ximplez-go/gf/util/gconv"
 )
 
 // Split splits string `str` by a string `delimiter`, to an array.

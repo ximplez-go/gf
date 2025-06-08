@@ -12,12 +12,12 @@ import (
 	"testing"
 	"time"
 
-	"github.com/gogf/gf/v2/os/gfile"
-	"github.com/gogf/gf/v2/os/gfpool"
-	"github.com/gogf/gf/v2/os/glog"
-	"github.com/gogf/gf/v2/os/gtime"
-	"github.com/gogf/gf/v2/test/gtest"
-	"github.com/gogf/gf/v2/text/gstr"
+	"github.com/ximplez-go/gf/os/gfile"
+	"github.com/ximplez-go/gf/os/gfpool"
+	"github.com/ximplez-go/gf/os/glog"
+	"github.com/ximplez-go/gf/os/gtime"
+	"github.com/ximplez-go/gf/test/gtest"
+	"github.com/ximplez-go/gf/text/gstr"
 )
 
 // TestOpen test open file cache
@@ -95,7 +95,7 @@ func TestOpenExpire(t *testing.T) {
 		time.Sleep(150 * time.Millisecond)
 		f2, err1 := gfpool.Open(testFile, os.O_RDWR|os.O_CREATE|os.O_TRUNC|os.O_APPEND, 0666, 100*time.Millisecond)
 		t.AssertEQ(err1, nil)
-		//t.AssertNE(f, f2)
+		// t.AssertNE(f, f2)
 		f2.Close()
 	})
 
@@ -115,7 +115,7 @@ func TestNewPool(t *testing.T) {
 		f2, err1 := pool.File()
 		// pool not equal
 		t.AssertEQ(err1, nil)
-		//t.AssertNE(f, f2)
+		// t.AssertNE(f, f2)
 		f2.Close()
 
 		pool.Close()

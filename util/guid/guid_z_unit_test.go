@@ -11,9 +11,9 @@ package guid_test
 import (
 	"testing"
 
-	"github.com/gogf/gf/v2/container/gset"
-	"github.com/gogf/gf/v2/test/gtest"
-	"github.com/gogf/gf/v2/util/guid"
+	"github.com/ximplez-go/gf/container/gset"
+	"github.com/ximplez-go/gf/test/gtest"
+	"github.com/ximplez-go/gf/util/guid"
 )
 
 func Test_S(t *testing.T) {

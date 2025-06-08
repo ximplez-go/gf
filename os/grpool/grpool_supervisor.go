@@ -9,7 +9,7 @@ package grpool
 import (
 	"context"
 
-	"github.com/gogf/gf/v2/os/gtimer"
+	"github.com/ximplez-go/gf/os/gtimer"
 )
 
 // supervisor checks the job list and fork new worker goroutine to handle the job

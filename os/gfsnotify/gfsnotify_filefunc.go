@@ -13,7 +13,7 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/gogf/gf/v2/errors/gerror"
+	"github.com/ximplez-go/gf/errors/gerror"
 )
 
 // fileDir returns all but the last element of path, typically the path's directory.

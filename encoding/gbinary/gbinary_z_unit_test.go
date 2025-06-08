@@ -10,8 +10,8 @@ import (
 	"math"
 	"testing"
 
-	"github.com/gogf/gf/v2/encoding/gbinary"
-	"github.com/gogf/gf/v2/test/gtest"
+	"github.com/ximplez-go/gf/encoding/gbinary"
+	"github.com/ximplez-go/gf/test/gtest"
 )
 
 type User struct {
@@ -21,7 +21,7 @@ type User struct {
 }
 
 var testData = map[string]interface{}{
-	//"nil":         nil,
+	// "nil":         nil,
 	"int":         int(123),
 	"int8":        int8(-99),
 	"int8.max":    math.MaxInt8,
@@ -54,7 +54,7 @@ func Test_EncodeAndDecode(t *testing.T) {
 			ve := gbinary.Encode(v)
 			ve1 := gbinary.EncodeByLength(len(ve), v)
 
-			//t.Logf("%s:%v, encoded:%v\n", k, v, ve)
+			// t.Logf("%s:%v, encoded:%v\n", k, v, ve)
 			switch v.(type) {
 			case int:
 				t.Assert(gbinary.DecodeToInt(ve), v)

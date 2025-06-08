@@ -18,13 +18,13 @@ import (
 	"go.opentelemetry.io/otel/propagation"
 	"go.opentelemetry.io/otel/trace"
 
-	"github.com/gogf/gf/v2"
-	"github.com/gogf/gf/v2/errors/gcode"
-	"github.com/gogf/gf/v2/errors/gerror"
-	"github.com/gogf/gf/v2/internal/intlog"
-	"github.com/gogf/gf/v2/net/gtrace"
-	"github.com/gogf/gf/v2/os/genv"
-	"github.com/gogf/gf/v2/text/gstr"
+	"github.com/ximplez-go/gf"
+	"github.com/ximplez-go/gf/errors/gcode"
+	"github.com/ximplez-go/gf/errors/gerror"
+	"github.com/ximplez-go/gf/internal/intlog"
+	"github.com/ximplez-go/gf/net/gtrace"
+	"github.com/ximplez-go/gf/os/genv"
+	"github.com/ximplez-go/gf/text/gstr"
 )
 
 // Process is the struct for a single process.

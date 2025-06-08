@@ -12,8 +12,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/gogf/gf/v2/test/gtest"
-	"github.com/gogf/gf/v2/text/gregex"
+	"github.com/ximplez-go/gf/test/gtest"
+	"github.com/ximplez-go/gf/text/gregex"
 )
 
 var (
@@ -22,7 +22,7 @@ var (
 
 func Test_Quote(t *testing.T) {
 	gtest.C(t, func(t *gtest.T) {
-		s1 := `[foo]` //`\[foo\]`
+		s1 := `[foo]` // `\[foo\]`
 		t.Assert(gregex.Quote(s1), `\[foo\]`)
 	})
 }
@@ -195,7 +195,7 @@ func Test_ReplaceFun(t *testing.T) {
 	gtest.C(t, func(t *gtest.T) {
 		re := "a(a+b+)b"
 		wantSubs := "aaabb"
-		//replace :="12345"
+		// replace :="12345"
 		s := "acbb" + wantSubs + "dd"
 		wanted := "acbb[x" + wantSubs + "y]dd"
 		wanted = "acbb" + "3个a" + "dd"
@@ -253,7 +253,7 @@ func Test_ReplaceStringFunc(t *testing.T) {
 	gtest.C(t, func(t *gtest.T) {
 		re := "a(a+b+)b"
 		wantSubs := "aaabb"
-		//replace :="12345"
+		// replace :="12345"
 		s := "acbb" + wantSubs + "dd"
 		wanted := "acbb[x" + wantSubs + "y]dd"
 		wanted = "acbb" + "3个a" + "dd"
@@ -315,7 +315,7 @@ func Test_Split(t *testing.T) {
 		item1 := "dd"
 		s := item0 + matched + item1
 		t.Assert(gregex.IsMatchString(re, matched), true)
-		items := gregex.Split(re, s) //split string with matched
+		items := gregex.Split(re, s) // split string with matched
 		if items[0] != item0 {
 			t.Fatalf("regex:%s,Split(%q) want %q", re, s, item0)
 		}
@@ -331,7 +331,7 @@ func Test_Split(t *testing.T) {
 		item1 := "dd"
 		s := item0 + notmatched + item1
 		t.Assert(gregex.IsMatchString(re, notmatched), false)
-		items := gregex.Split(re, s) //split string with notmatched then nosplitting
+		items := gregex.Split(re, s) // split string with notmatched then nosplitting
 		if items[0] != s {
 			t.Fatalf("regex:%s,Split(%q) want %q", re, s, item0)
 		}

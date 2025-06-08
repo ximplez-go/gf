@@ -11,11 +11,11 @@ import (
 	"strings"
 	"time"
 
-	"github.com/gogf/gf/v2/container/gtype"
-	"github.com/gogf/gf/v2/errors/gcode"
-	"github.com/gogf/gf/v2/errors/gerror"
-	"github.com/gogf/gf/v2/os/gtime"
-	"github.com/gogf/gf/v2/text/gregex"
+	"github.com/ximplez-go/gf/container/gtype"
+	"github.com/ximplez-go/gf/errors/gcode"
+	"github.com/ximplez-go/gf/errors/gerror"
+	"github.com/ximplez-go/gf/os/gtime"
+	"github.com/ximplez-go/gf/text/gregex"
 )
 
 // cronSchedule is the schedule for cron job.

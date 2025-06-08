@@ -20,8 +20,8 @@ package gqueue
 import (
 	"math"
 
-	"github.com/gogf/gf/v2/container/glist"
-	"github.com/gogf/gf/v2/container/gtype"
+	"github.com/ximplez-go/gf/container/glist"
+	"github.com/ximplez-go/gf/container/gtype"
 )
 
 // Queue is a concurrent-safe queue built on doubly linked list and channel.

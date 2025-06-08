@@ -9,7 +9,7 @@ package gcache
 import (
 	"sync"
 
-	"github.com/gogf/gf/v2/container/gset"
+	"github.com/ximplez-go/gf/container/gset"
 )
 
 type memoryExpireSets struct {

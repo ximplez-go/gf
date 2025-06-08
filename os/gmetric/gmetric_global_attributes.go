@@ -9,7 +9,7 @@ package gmetric
 import (
 	"sync"
 
-	"github.com/gogf/gf/v2/text/gregex"
+	"github.com/ximplez-go/gf/text/gregex"
 )
 
 // SetGlobalAttributesOption binds the global attributes to certain instrument.

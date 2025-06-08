@@ -13,10 +13,10 @@ import (
 	"os"
 	"testing"
 
-	"github.com/gogf/gf/v2/frame/g"
-	"github.com/gogf/gf/v2/os/gcmd"
-	"github.com/gogf/gf/v2/os/gctx"
-	"github.com/gogf/gf/v2/test/gtest"
+	"github.com/ximplez-go/gf/frame/g"
+	"github.com/ximplez-go/gf/os/gcmd"
+	"github.com/ximplez-go/gf/os/gctx"
+	"github.com/ximplez-go/gf/test/gtest"
 )
 
 type TestCmdObject struct {
@@ -274,9 +274,9 @@ func Test_Command_NeedArgs(t *testing.T) {
 		cmd, err := gcmd.NewFromObject(TestObjectForNeedArgs{})
 		t.AssertNil(err)
 
-		//os.Args = []string{"root", "test", "a", "b", "c", "-h"}
-		//value, err := cmd.RunWithValueError(ctx)
-		//t.AssertNil(err)
+		// os.Args = []string{"root", "test", "a", "b", "c", "-h"}
+		// value, err := cmd.RunWithValueError(ctx)
+		// t.AssertNil(err)
 
 		os.Args = []string{"root", "test", "a", "b", "c", "-n=john"}
 		value, err := cmd.RunWithValueError(ctx)

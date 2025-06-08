@@ -11,10 +11,10 @@ import (
 	"context"
 	"time"
 
-	"github.com/gogf/gf/v2/container/glist"
-	"github.com/gogf/gf/v2/container/gtype"
-	"github.com/gogf/gf/v2/os/gtimer"
-	"github.com/gogf/gf/v2/util/grand"
+	"github.com/ximplez-go/gf/container/glist"
+	"github.com/ximplez-go/gf/container/gtype"
+	"github.com/ximplez-go/gf/os/gtimer"
+	"github.com/ximplez-go/gf/util/grand"
 )
 
 // Func is the pool function which contains context parameter.

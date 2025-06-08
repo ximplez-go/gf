@@ -10,7 +10,7 @@ import (
 	"errors"
 	"strconv"
 
-	"github.com/gogf/gf/v2/text/gstr"
+	"github.com/ximplez-go/gf/text/gstr"
 )
 
 // RuleMin implements `min` rule:

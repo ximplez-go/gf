@@ -14,8 +14,8 @@ import (
 
 	strip "github.com/grokify/html-strip-tags-go"
 
-	"github.com/gogf/gf/v2/errors/gcode"
-	"github.com/gogf/gf/v2/errors/gerror"
+	"github.com/ximplez-go/gf/errors/gcode"
+	"github.com/ximplez-go/gf/errors/gerror"
 )
 
 // StripTags strips HTML tags from content, and returns only text.

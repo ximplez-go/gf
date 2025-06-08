@@ -10,8 +10,8 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/gogf/gf/v2/os/gmetric"
-	"github.com/gogf/gf/v2/test/gtest"
+	"github.com/ximplez-go/gf/os/gmetric"
+	"github.com/ximplez-go/gf/test/gtest"
 )
 
 func Test_Counter(t *testing.T) {

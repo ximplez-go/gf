@@ -9,7 +9,7 @@ package gudp
 import (
 	"net"
 
-	"github.com/gogf/gf/v2/errors/gerror"
+	"github.com/ximplez-go/gf/errors/gerror"
 )
 
 // NewNetConn creates and returns a *net.UDPConn with given addresses.

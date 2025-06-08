@@ -9,10 +9,10 @@ package gutil
 import (
 	"reflect"
 
-	"github.com/gogf/gf/v2/errors/gcode"
-	"github.com/gogf/gf/v2/errors/gerror"
-	"github.com/gogf/gf/v2/os/gstructs"
-	"github.com/gogf/gf/v2/util/gconv"
+	"github.com/ximplez-go/gf/errors/gcode"
+	"github.com/ximplez-go/gf/errors/gerror"
+	"github.com/ximplez-go/gf/os/gstructs"
+	"github.com/ximplez-go/gf/util/gconv"
 )
 
 // StructToSlice converts struct to slice of which all keys and values are its items.

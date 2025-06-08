@@ -9,7 +9,7 @@ package builtin
 import (
 	"errors"
 
-	"github.com/gogf/gf/v2/internal/json"
+	"github.com/ximplez-go/gf/internal/json"
 )
 
 // RuleArray implements `array` rule:

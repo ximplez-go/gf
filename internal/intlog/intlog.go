@@ -16,8 +16,8 @@ import (
 
 	"go.opentelemetry.io/otel/trace"
 
-	"github.com/gogf/gf/v2/debug/gdebug"
-	"github.com/gogf/gf/v2/internal/utils"
+	"github.com/ximplez-go/gf/debug/gdebug"
+	"github.com/ximplez-go/gf/internal/utils"
 )
 
 const (

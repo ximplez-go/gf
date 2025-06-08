@@ -12,13 +12,13 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/gogf/gf/v2/errors/gcode"
-	"github.com/gogf/gf/v2/errors/gerror"
-	"github.com/gogf/gf/v2/internal/intlog"
-	"github.com/gogf/gf/v2/os/gfile"
-	"github.com/gogf/gf/v2/os/gres"
-	"github.com/gogf/gf/v2/os/gspath"
-	"github.com/gogf/gf/v2/text/gstr"
+	"github.com/ximplez-go/gf/errors/gcode"
+	"github.com/ximplez-go/gf/errors/gerror"
+	"github.com/ximplez-go/gf/internal/intlog"
+	"github.com/ximplez-go/gf/os/gfile"
+	"github.com/ximplez-go/gf/os/gres"
+	"github.com/ximplez-go/gf/os/gspath"
+	"github.com/ximplez-go/gf/text/gstr"
 )
 
 // SetPath sets the configuration `directory` path for file search.

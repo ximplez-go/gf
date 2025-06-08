@@ -9,9 +9,9 @@ package gfile_test
 import (
 	"testing"
 
-	"github.com/gogf/gf/v2/container/garray"
-	"github.com/gogf/gf/v2/os/gfile"
-	"github.com/gogf/gf/v2/test/gtest"
+	"github.com/ximplez-go/gf/container/garray"
+	"github.com/ximplez-go/gf/os/gfile"
+	"github.com/ximplez-go/gf/test/gtest"
 )
 
 func Test_ScanDir(t *testing.T) {

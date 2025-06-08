@@ -13,8 +13,8 @@ import (
 	"runtime"
 	"sync"
 
-	"github.com/gogf/gf/v2/internal/intlog"
-	"github.com/gogf/gf/v2/util/gconv/internal/localinterface"
+	"github.com/ximplez-go/gf/internal/intlog"
+	"github.com/ximplez-go/gf/util/gconv/internal/localinterface"
 )
 
 type interfaceTypeConverter struct {

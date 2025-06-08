@@ -11,7 +11,7 @@ import (
 	"encoding/base64"
 	"os"
 
-	"github.com/gogf/gf/v2/errors/gerror"
+	"github.com/ximplez-go/gf/errors/gerror"
 )
 
 // Encode encodes bytes with BASE64 algorithm.

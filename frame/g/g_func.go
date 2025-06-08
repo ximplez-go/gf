@@ -10,11 +10,10 @@ import (
 	"context"
 	"io"
 
-	"github.com/gogf/gf/v2/container/gvar"
-	"github.com/gogf/gf/v2/internal/empty"
-	"github.com/gogf/gf/v2/net/ghttp"
-	"github.com/gogf/gf/v2/os/gproc"
-	"github.com/gogf/gf/v2/util/gutil"
+	"github.com/ximplez-go/gf/container/gvar"
+	"github.com/ximplez-go/gf/internal/empty"
+	"github.com/ximplez-go/gf/os/gproc"
+	"github.com/ximplez-go/gf/util/gutil"
 )
 
 // Go creates a new asynchronous goroutine function with specified recover function.
@@ -35,12 +34,6 @@ func Go(
 // NewVar returns a gvar.Var.
 func NewVar(i interface{}, safe ...bool) *Var {
 	return gvar.New(i, safe...)
-}
-
-// Wait is an alias of ghttp.Wait, which blocks until all the web servers shutdown.
-// It's commonly used in multiple servers' situation.
-func Wait() {
-	ghttp.Wait()
 }
 
 // Listen is an alias of gproc.Listen, which handles the signals received and automatically
@@ -113,9 +106,4 @@ func IsNil(value interface{}, traceSource ...bool) bool {
 // Note that it might use reflect feature which affects performance a little.
 func IsEmpty(value interface{}, traceSource ...bool) bool {
 	return empty.IsEmpty(value, traceSource...)
-}
-
-// RequestFromCtx retrieves and returns the Request object from context.
-func RequestFromCtx(ctx context.Context) *ghttp.Request {
-	return ghttp.RequestFromCtx(ctx)
 }

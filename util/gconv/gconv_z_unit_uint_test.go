@@ -10,9 +10,9 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/gogf/gf/v2/container/gvar"
-	"github.com/gogf/gf/v2/test/gtest"
-	"github.com/gogf/gf/v2/util/gconv"
+	"github.com/ximplez-go/gf/container/gvar"
+	"github.com/ximplez-go/gf/test/gtest"
+	"github.com/ximplez-go/gf/util/gconv"
 )
 
 var (
@@ -121,7 +121,7 @@ var uintTests = []struct {
 func TestUint(t *testing.T) {
 	gtest.C(t, func(t *gtest.T) {
 		for _, v := range uintTests {
-			//t.Logf(`%+v`, v)
+			// t.Logf(`%+v`, v)
 			t.AssertEQ(gconv.Uint(v.value), v.expect)
 		}
 	})

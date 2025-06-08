@@ -10,8 +10,7 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/gogf/gf/v2/container/gset"
-	"github.com/gogf/gf/v2/frame/g"
+	"github.com/ximplez-go/gf/container/gset"
 )
 
 // NewStrSet create and returns a new set, which contains un-repeated items.
@@ -399,22 +398,4 @@ func ExampleStrSet_UnmarshalValue() {
 
 	// May Output:
 	// {1 john "99","98","100"}
-}
-
-// Walk applies a user supplied function `f` to every item of set.
-func ExampleStrSet_Walk() {
-	var (
-		set    gset.StrSet
-		names  = g.SliceStr{"user", "user_detail"}
-		prefix = "gf_"
-	)
-	set.Add(names...)
-	// Add prefix for given table names.
-	set.Walk(func(item string) string {
-		return prefix + item
-	})
-	fmt.Println(set.Slice())
-
-	// May Output:
-	// [gf_user gf_user_detail]
 }

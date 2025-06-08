@@ -11,12 +11,12 @@ package gcfg_test
 import (
 	"testing"
 
-	"github.com/gogf/gf/v2/os/gcfg"
-	"github.com/gogf/gf/v2/os/gcmd"
-	"github.com/gogf/gf/v2/os/genv"
-	"github.com/gogf/gf/v2/os/gfile"
-	"github.com/gogf/gf/v2/os/gtime"
-	"github.com/gogf/gf/v2/test/gtest"
+	"github.com/ximplez-go/gf/os/gcfg"
+	"github.com/ximplez-go/gf/os/gcmd"
+	"github.com/ximplez-go/gf/os/genv"
+	"github.com/ximplez-go/gf/os/gfile"
+	"github.com/ximplez-go/gf/os/gtime"
+	"github.com/ximplez-go/gf/test/gtest"
 )
 
 func Test_Basic1(t *testing.T) {

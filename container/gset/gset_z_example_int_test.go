@@ -10,8 +10,7 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/gogf/gf/v2/container/gset"
-	"github.com/gogf/gf/v2/frame/g"
+	"github.com/ximplez-go/gf/container/gset"
 )
 
 // New create and returns a new set, which contains un-repeated items.
@@ -387,22 +386,4 @@ func ExampleIntSet_UnmarshalValue() {
 
 	// May Output:
 	// {1 john [100,99,98]}
-}
-
-// Walk applies a user supplied function `f` to every item of set.
-func ExampleIntSet_Walk() {
-	var (
-		set   gset.IntSet
-		names = g.SliceInt{1, 0}
-		delta = 10
-	)
-	set.Add(names...)
-	// Add prefix for given table names.
-	set.Walk(func(item int) int {
-		return delta + item
-	})
-	fmt.Println(set.Slice())
-
-	// May Output:
-	// [12 60]
 }

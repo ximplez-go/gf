@@ -3,8 +3,8 @@ package gtime_test
 import (
 	"testing"
 
-	"github.com/gogf/gf/v2/os/gtime"
-	"github.com/gogf/gf/v2/test/gtest"
+	"github.com/ximplez-go/gf/os/gtime"
+	"github.com/ximplez-go/gf/test/gtest"
 )
 
 func TestTime_Scan(t1 *testing.T) {

@@ -10,8 +10,8 @@ package gmeta
 import (
 	"reflect"
 
-	"github.com/gogf/gf/v2/container/gvar"
-	"github.com/gogf/gf/v2/os/gstructs"
+	"github.com/ximplez-go/gf/container/gvar"
+	"github.com/ximplez-go/gf/os/gstructs"
 )
 
 // Meta is used as an embedded attribute for struct to enabled metadata feature.
