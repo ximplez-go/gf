@@ -8,6 +8,7 @@ package gjson
 
 import (
 	"bytes"
+	"log"
 
 	"github.com/ximplez-go/gf/errors/gerror"
 	"github.com/ximplez-go/gf/internal/json"
@@ -102,4 +103,38 @@ func DecodeToJson(data interface{}, options ...Options) (*Json, error) {
 		}
 		return New(v), nil
 	}
+}
+
+func ToJsonSilent(data interface{}) string {
+	return toJsonSilent(data, false)
+}
+
+func ToJsonSilentPretty(data interface{}) string {
+	return toJsonSilent(data, true)
+}
+
+func toJsonSilent(data interface{}, pretty bool) string {
+	if pretty {
+		jsonByte, err := json.MarshalIndent(data, "", "  ")
+		if err != nil {
+			log.Printf("[ToJson] error. %s", err.Error())
+		}
+		return string(jsonByte)
+	} else {
+		jsonByte, _ := json.Marshal(data)
+		return string(jsonByte)
+	}
+}
+
+func PhaseJsonSilent[T any](data []byte) *T {
+	v := new(T)
+	err := json.Unmarshal(data, v)
+	if err != nil {
+		log.Printf("[PhaseJson] error. %s", err.Error())
+	}
+	return v
+}
+
+func PhaseJsonFromString[T any](data string) *T {
+	return PhaseJsonSilent[T]([]byte(data))
 }
